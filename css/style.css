@@ -21,42 +21,67 @@
 
 * { box-sizing: border-box; }
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--ink);
-  font: 17px/1.6 Georgia, "Times New Roman", serif;
-  overflow-x: hidden; /* the full-bleed hero can be 1-2px wider than the viewport with scrollbars present */
+html {
+  background: transparent;
 }
 
-main { max-width: 720px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+body {
+  margin: 0;
+  background: transparent; /* Essential: prevents body from painting white over the backdrop */
+  color: var(--ink);
+  font: 17px/1.6 Georgia, "Times New Roman", serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative; /* Establishes stacking context for body::before */
+}
 
+/* Full-screen blurred manuscript backdrop */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* Sits safely between the empty body background and your text */
+  
+  /* Fallback color: if the image fails to load, this warm parchment tone will show */
+  background-color: #f2ede2; 
+  
+  /* Try both paths depending on where your CSS file lives:
+     If style.css is in the root: "assets/manuscript-bg.png"
+     If style.css is in a folder (e.g. css/style.css): "../assets/manuscript-bg.png" */
+  background-image: url("../assets/manuscript-bg.png"); 
+  background-size: cover;
+  background-position: center center;
+  filter: blur(8px) saturate(0.6) brightness(1.15) sepia(0.15);
+  transform: scale(1.05); /* Eliminates white edges caused by the blur filter */
+}
+
+/* Widened main content panel with parchment-white card styling */
+main { 
+  max-width: 1050px; /* Widened layout */
+  margin: 2rem auto; 
+  padding: 2.5rem 3rem 4rem; 
+  background: rgba(255, 255, 255, 0.95); /* Semi-transparent white so text is perfectly readable */
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+}
 /* ===== HERO: soft manuscript backdrop behind the title only ===== */
 .hero {
   position: relative;
-  overflow: hidden;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding: 3.5rem 1.25rem 2rem;
+  width: 100%;
+  padding: 1.5rem 0 2rem;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("assets/manuscript-bg.png");
-  background-size: cover;
-  background-position: center 30%;
-  filter: blur(7px) saturate(0.55) brightness(1.22) sepia(0.12);
-  transform: scale(1.08); /* hides the soft blurred edge */
+.hero::before, .hero::after {
+  display: none; /* Disables the old localized backdrop filters */
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(255,255,255,.35) 0%, rgba(255,255,255,.82) 78%, var(--bg) 100%);
+.hero header { 
+  position: relative; 
+  z-index: 1; 
+  max-width: 1050px; /* Matches our new layout width */
+  margin: 0 auto; 
 }
-.hero header { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+.hero header p.subtitle {
+  max-width: 100%;
+}
 
 header { border-bottom: 2px solid var(--accent); padding-bottom: 1rem; }
 h1 { font-size: 2rem; margin: 0 0 .25rem; color: var(--accent); }
@@ -64,7 +89,8 @@ h2 { font-size: 1.25rem; margin-top: 2.5rem; border-bottom: 1px solid var(--rule
 .subtitle { font-size: 1.1rem; color: var(--muted); margin: .25rem 0 0; }
 .byline { color: var(--muted); font-size: .95rem; }
 
-p, li { max-width: 65ch; }
+/* With this: */
+p, li { max-width: 100%; }
 a { color: var(--accent); }
 
 figure { margin: 1.5rem 0; text-align: center; }
