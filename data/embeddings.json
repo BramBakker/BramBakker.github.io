@@ -1,0 +1,19 @@
+{
+ "note": "SAMPLE DATA -- placeholder only. No line-embedding model has been trained for this project yet; these points are illustrative, not real results.",
+ "known_label": "Cronycke van Brabant",
+ "questioned_label": "Brabantsche Yeesten",
+ "points": [
+  {"id": "k1", "doc": "known", "x": 0.12, "y": 0.44, "line_no": 12, "match_index": 1,
+   "lines": ["Bescreven met haren bloede root", "In een scale, dair sy uut dranc,", "Soe dat Hertoge Jan van Brabant", "Reet, doe hi verstaet die mere;"]},
+  {"id": "k2", "doc": "known", "x": 0.31, "y": 0.52, "line_no": 88, "match_index": 1,
+   "lines": ["Ende van Brabant die hertoghe", "Maer die edel brabansche hertoghe", "Was in dien tiden vroem ghenoech,"]},
+  {"id": "k3", "doc": "known", "x": 0.22, "y": 0.61, "line_no": 140, "match_index": 1,
+   "lines": ["Doen seide die hertoge van Brabant:", "Ic wille varen in dat lant", "Ende sien hoe het daer steet."]},
+  {"id": "q1", "doc": "questioned", "x": 0.58, "y": 0.30, "line_no": 307, "match_index": 1,
+   "lines": ["Nu willic u vort doen bekant", "Hoe die dochteren van Brabant,", "Johanne, Margriete ende Marie,"]},
+  {"id": "q2", "doc": "questioned", "x": 0.71, "y": 0.22, "line_no": 512, "match_index": 1,
+   "lines": ["Die hertoghe bleef bevaen met rouwen", "Ende dede den lichaem scouwen", "Eer men ten grave voert soude gaen."]},
+  {"id": "q3", "doc": "questioned", "x": 0.66, "y": 0.40, "line_no": 890, "match_index": 1,
+   "lines": ["Den heere van Assche, die te dier tijt", "Was in groten stride verhit", "Jeghen den grave van Loen."]}
+ ]
+}

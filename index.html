@@ -30,7 +30,7 @@
   <div class="hero">
     <header>
       <h1>Hennen van Merchtenen and the voortzetting</h1>
-      <p class="subtitle">Three lines of computational evidence toward a shared author between Hennen van Merchtenen's known work and the disputed continuation of the Brabantsche Yeesten.</p>
+      <p class="subtitle">Three lines of computational evidence toward a shared author between Hennen van Merchtenen's known work and two disputed books of the continuation of the Brabantsche Yeesten.</p>
       <p class="byline">Bram Bakker &middot; <span id="year"></span></p>
     </header>
   </div>
@@ -59,14 +59,15 @@
   <!-- ----- TAB 1: bigram / trigram frequency ----- -->
   <section class="tab-panel" id="panel-ngrams" role="tabpanel" aria-labelledby="tab-ngrams" tabindex="0">
     <p class="tab-intro">
-      Shared bigrams and trigrams between the known text and the questioned chapters, ranked by their
+      Shared bigrams and trigrams between the known text and each questioned book, ranked by their
       contribution to the two documents' TF&#8209;IDF similarity. Click any term &mdash; on either side &mdash;
       to see how each document actually uses it.
     </p>
-    <div class="compare-grid" id="ngrams-grid" aria-live="polite"></div>
-    <div class="context-panel" id="ngrams-context">
-      <p class="context-placeholder">Click a shared term above to compare its use in both texts.</p>
-    </div>
+    <div id="ngrams-comparisons"></div>
+
+    <h3>Background similarity calibration</h3>
+    <p class="tab-intro" id="ngrams-calibration-caption"></p>
+    <div id="ngrams-calibration-chart"></div>
   </section>
 
   <!-- ----- TAB 2: rhyme similarity ----- -->
@@ -76,14 +77,11 @@
       scribes rewrite a line's wording far more freely than its rhyme pair. Click any word to see the
       lines it closes in both texts.
     </p>
-    <div class="compare-grid" id="rhymes-grid" aria-live="polite"></div>
-    <div class="context-panel" id="rhymes-context">
-      <p class="context-placeholder">Click a shared rhyme word above to compare its use in both texts.</p>
-    </div>
+    <div id="rhymes-comparisons"></div>
 
-    <h3>Impostors method: null calibration</h3>
-    <p class="tab-intro" id="calibration-caption"></p>
-    <div id="calibration-chart"></div>
+    <h3>Background similarity calibration</h3>
+    <p class="tab-intro" id="rhymes-calibration-caption"></p>
+    <div id="rhymes-calibration-chart"></div>
   </section>
 
   <!-- ----- TAB 3: contrastive embeddings ----- -->
@@ -92,6 +90,10 @@
       Each point is one line of verse, placed by a 2D projection of its learned style embedding.
       Lines that sit close together were judged similar in phrasing and rhythm by the model. Click a
       point to read the line in context.
+    </p>
+    <p class="tab-intro placeholder-note">
+      <strong>Placeholder:</strong> no embedding model has been trained for this project yet &mdash;
+      the plot below is bundled sample data, shown only so the intended layout is visible.
     </p>
     <div class="embedding-layout">
       <div id="embedding-plot"></div>
@@ -105,12 +107,14 @@
   <section>
     <h2>How it was made</h2>
     <p>
-      Three independent methods were run over a corpus of 265 Middle Dutch rhymed manuscripts:
-      TF&#8209;IDF bigram/trigram similarity, a rhyme-word&#8209;based General Impostors verification
-      with leave-one-out validation against known multi-manuscript authors, and a contrastive
-      character-level line encoder trained across the corpus with author identity as the training
-      signal. The full pipeline and how to regenerate the data behind these tabs is documented in the
-      <a href="README.md">README</a>.
+      Three independent methods were run over a corpus of 263 Middle Dutch rhymed manuscripts:
+      TF&#8209;IDF bigram/trigram cosine similarity, a rhyme-word cosine similarity built the same way,
+      and (planned) a contrastive character-level line encoder trained across the corpus with author
+      identity as the training signal. For the first two methods, each questioned book's similarity to
+      the known text is checked against a background distribution &mdash; the known text's similarity to
+      every other document in the corpus &mdash; so a high score can be judged against how much similarity
+      naturally varies between unrelated documents. The full pipeline and how to regenerate the data
+      behind these tabs is documented in the <a href="README.md">README</a>.
     </p>
   </section>
 

@@ -1,0 +1,3019 @@
+{
+ "meta": {
+  "known_label": "Cronycke van Brabant"
+ },
+ "comparisons": [
+  {
+   "questioned_label": "Brabantsche Yeesten, boek 6",
+   "similarity": 0.28935644919533,
+   "items": [
+    {
+     "term": "van brabant",
+     "type": "bigram",
+     "score": 0.05660609753501859,
+     "known": [
+      {
+       "line_no": 44,
+       "lines": [
+        "Bescreven met haren bloede root",
+        "In een scale, dair sy uut dranc,",
+        "Soe dat Hertoge Jan van Brabant",
+        "Reet, doe hi verstaet die mere;",
+        "Op twee dage reet die edel heere"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 88,
+       "lines": [
+        "Diet vremde had, ende vraechde of selc dinc",
+        "Die zede ware in Duytsche lant?",
+        "Doen seide die hertoge van Brabant:",
+        "‘Neent, her coninc, maer waendi,",
+        "Dat ic niet zoe rijke en si,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 128,
+       "lines": [
+        "Schoet een heraut [bi] te dien tiden,",
+        "Ende hilt hem den stegereep sijn,",
+        "Ende seyde: ‘Van Brabant prince fijn,",
+        "God wille u nemen in sijnder hoeden.’",
+        "Doen antwoirde die prince goede:"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 47,
+       "lines": [
+        "Die ziele van den wisen man,",
+        "Die de ieesten ierst began,",
+        "Van Brabant die edel croniken,",
+        "Die hi alsoe notabeliken",
+        "Heeft gheset ende verclaert;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 63,
+       "lines": [
+        "Dat coen gelaet, dat manlijc wesen,",
+        "Der hertogen uut ghelesen",
+        "Van Brabant die hoghe geboren vorsten,",
+        "Daer iegeliken mach na dorsten,",
+        "Om te hoerne haer avontuere,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 91,
+       "lines": [
+        "Volbracht, alsoe notabeliken,",
+        "Al toten derden hertoge Jan,",
+        "Van Brabant den hoge gebornen man,",
+        "Dat haer were wel es te prisen.",
+        "God wille haer ziel ten hemel wisen;"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die heere",
+     "type": "bigram",
+     "score": 0.0077164635621563196,
+     "known": [
+      {
+       "line_no": 37,
+       "lines": [
+        "Van sijnder suster der coninghinne,",
+        "Die men onverdient ter doot woude bringen;",
+        "Want vander Broetsen her Peter, die heere,",
+        "Seide haer op loghene ende onneere.",
+        "Soe deetse die coninc vaen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 216,
+       "lines": [
+        "Moeder ende maget ghenaes,",
+        "Dat zij haeren weerden soene",
+        "Wil bidden, dat hy die heere vrome",
+        "Bringhe int hemels palais,Hs. ... was: ghenaes: palais, z. 4.",
+        "Die de ryke warande scone,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 964,
+       "lines": [
+        "Want teser materien niet en hoert.",
+        "Op Maersiaente stel ic mij voert,",
+        "Die heere was van menegen lande;",
+        "Want Henegouwe, wilt verstanden,",
+        "Aertois ende Picaerdien"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 393,
+       "lines": [
+        "Die wi moeten, jonge ende out,",
+        "Betalen als Gods wille si.",
+        "Aldus soe bleef die heere vri",
+        "Sonder oer, die jonge Jan",
+        "Van Brabant, die edel man."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1602,
+       "lines": [
+        "Dat ic meine dat niet groot",
+        "Daeraf en was haer bodenbroot.",
+        "Her Everaert, die heere vaeillant,",
+        "Heeft boden haestelec ghesant,",
+        "Sonder beiden, tot sinen heere,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2149,
+       "lines": [
+        "Alsoe dat seggen hadde in,",
+        "Luttel min ochte luttel meere,",
+        "Alsoet grave Willem, die heere,",
+        "Uut sprac, na sijn ghelieven;",
+        "Des vermetic mi der brieven,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "heere van",
+     "type": "bigram",
+     "score": 0.006300359451608114,
+     "known": [
+      {
+       "line_no": 938,
+       "lines": [
+        "Welc Hoeijoen woende op der Masen cant,",
+        "Te Hoey, dat nae hem es genamt,",
+        "Ende was heere van Ardenen,",
+        "Ende van den Eyfele, ende alsoe henen,",
+        "Van Lymborch, van Retters, van Pierlepont,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1588,
+       "lines": [
+        "Die vrome was ende hoege,",
+        "Ende hielt strijt ende orloghe",
+        "Seghen .j. heere van Utrecht,",
+        "Die hij vinc in .j. gevecht,",
+        "Daer hij seghen hem hielt stryt;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1627,
+       "lines": [
+        "Eens hielt syn vader, hoegeboeren,",
+        "Hof, te Lovene, in die sale:",
+        "Bij hem was die heere van Leefdale,",
+        "Ende van Bruessel de borchgreve, Boudewyn;",
+        "Heer Henric van Assche, die prince fin;"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1320,
+       "lines": [
+        "Hoe dat ghesciede, dat weet Ons Here!",
+        "Maer men spraecs luttel eere",
+        "Den heere van Assche, die te dier tijt",
+        "Die banniere voerde in dien strijt,",
+        "Ende hadse in sier ghewelt."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1325,
+       "lines": [
+        "Dat si dus haest wert ghevelt",
+        "Heeft sint den menegen vroeden wisen",
+        "Dien heere van Assche horen misprisen,",
+        "Ende sint, naer sijnre doot,",
+        "Horen vermanen in scaemten groot."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1641,
+       "lines": [
+        "Van Beyeren, grave van Hollant,",
+        "Van Henegouwe, van Zeelant mede,",
+        "Ende Heere van Vriesen, die dede",
+        "Dedinghen tusscen die heeren beide",
+        "Met alsulken ondersceide,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die hertoghe",
+     "type": "bigram",
+     "score": 0.006041306548703131,
+     "known": [
+      {
+       "line_no": 70,
+       "lines": [
+        "Sijnen zwager, in clare dinc,",
+        "‘Wie metten anderen eten soude?’",
+        "Doen soe seyde die hertoghe boude:",
+        "‘Wie yerst bereet hadde sijn spijse.’",
+        "Het consenteerde die coninc wise."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 75,
+       "lines": [
+        "Hi dede verbieden dat men colen noch haut",
+        "En vercochte den hertoge stout.",
+        "Ende als die hertoghe verstont dat",
+        "Dede hi alle die planen nappen van der stat",
+        "Coepen, ende alle die scotelen mede,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 136,
+       "lines": [
+        "Haren overmoet word hen gerooft",
+        "Dorren zy my bieden velt ende schilt.’",
+        "Dus jaeghde wech die hertoghe wilt",
+        "Buten tcloestere met pagie alleyn,",
+        "Ende alle die heeren, groot ende cleyn,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 451,
+       "lines": [
+        "Van sinen wive, dat wel sere",
+        "Te clagen was, in goeder trouwen.",
+        "Die hertoghe bleef bevaen met rouwen",
+        "Als dat wel was proeffelijc;",
+        "Soe deden oec ghewarichlijc"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2240,
+       "lines": [
+        "Den hertoge, dat hi mids desen",
+        "In sorge daer lage, ende in vresen.",
+        "Die hertoghe was cort bedacht",
+        "Ende trac met heercracht,",
+        "Seere vermogen, te Hoesden waert."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2314,
+       "lines": [
+        "Ende van Saffenberghe den heere,",
+        "Als dat van desen dage vort meere",
+        "Die hertoghe Jan van Brabant",
+        "Behouden soude stad, borch, ende lant",
+        "Van Hosden, met al der toebehoere,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "ende die",
+     "type": "bigram",
+     "score": 0.005791290202653604,
+     "known": [
+      {
+       "line_no": 61,
+       "lines": [
+        "Hanct den stegereep des hertogen",
+        "Te Parijs, voir die zale hoghe.",
+        "Ende die coninc van Vranckerijc",
+        "Quam metten hertoge te dier tijt",
+        "Tot sinte Quintijns in Vermandois:"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 106,
+       "lines": [
+        "In vryer erve dat velt.’",
+        "Noch heetet le terre de Brabant.",
+        "Ende die coninc van Vranckelant",
+        "Nam oirloff, ende voer te Parijs,",
+        "Ende die hertoge thuys, zijts wijs."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 108,
+       "lines": [
+        "Ende die coninc van Vranckelant",
+        "Nam oirloff, ende voer te Parijs,",
+        "Ende die hertoge thuys, zijts wijs.",
+        "Te Bruwildre, in een abdie",
+        "Bi Coelne, soe reet die hertoge vrie"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 667,
+       "lines": [
+        "Dus wert hi coninc in Behem verheven.",
+        "Dese coninc van Behem, dat volght hier an,",
+        "Ende die derde hertoge Jan",
+        "Van Brabant, vrou Johannen vader,",
+        "Dese waren beide gader"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1011,
+       "lines": [
+        "Te Brabant wert uut en dorsten comen.",
+        "Die van Brussel der goeder stede,",
+        "Ende die van Antwerpen mede",
+        "Hilden die Vlaminge soe seere",
+        "Wacker, dat si niet meere"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1132,
+       "lines": [
+        "Sonder oer van haren liven,",
+        "Soe soude die hertoeghdomme bliven,",
+        "Die lande, ende die heerlicheide,",
+        "Van Brabant ende van Limborch beide,",
+        "Op keiser Karlen, sonder rigeur,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "in brabant",
+     "type": "bigram",
+     "score": 0.005582430437512423,
+     "known": [
+      {
+       "line_no": 770,
+       "lines": [
+        "Menschelec woude syn gheboren.",
+        "Nu hoert, ic sal u laten hoeren",
+        "Hoe Breboen heere in brabant wert",
+        "Ende hoe hy dierste, sy u verclaert,",
+        "Hertoghe was, voer Christus tyt."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1070,
+       "lines": [
+        "Te Lande dat hy woenende was.",
+        "Syn soene hiet Puppyn, als ic las,",
+        "Ende was dierste hertoghe in Brabant,",
+        "Jae kersten, sij u becant.",
+        "Ende des hertoghe Puppyn"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1082,
+       "lines": [
+        "Van sente Gertruden, der maget goet.",
+        "Ende doen Puppyn, des syt vroet,",
+        "IJerst hertoge wert in Brabant,",
+        "Screef men, als ic gescreven vant,",
+        ".Vj.c ende .xvij. jaer ende .xxx. regeerde, naer,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 95,
+       "lines": [
+        "God wille haer ziel ten hemel wisen;",
+        "Ende want, na deser heeren doot,",
+        "In Brabant sijn bleven heeren groot,",
+        "Ende princhen van hogher macht,",
+        "Bi den welcken dat volbracht"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 401,
+       "lines": [
+        "Doe sant die coninc met eeren groot",
+        "Den jongen Jan, si u bekant,",
+        "Weder omme in Brabant,",
+        "Met grotet menichte, met sconen gesinde,",
+        "Tot sinen vader, diene minde,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 406,
+       "lines": [
+        "Diene minlic heeft ontfaen.",
+        "Niet langhe daer na, dat wilt verstaen,",
+        "Dat hi in Brabant hadde gewesen,",
+        "Es hem een siecheit aen gheresen,",
+        "Die hem toter herten ruerde,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die hertoge",
+     "type": "bigram",
+     "score": 0.005227351149005099,
+     "known": [
+      {
+       "line_no": 88,
+       "lines": [
+        "Diet vremde had, ende vraechde of selc dinc",
+        "Die zede ware in Duytsche lant?",
+        "Doen seide die hertoge van Brabant:",
+        "‘Neent, her coninc, maer waendi,",
+        "Dat ic niet zoe rijke en si,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 108,
+       "lines": [
+        "Ende die coninc van Vranckelant",
+        "Nam oirloff, ende voer te Parijs,",
+        "Ende die hertoge thuys, zijts wijs.",
+        "Te Bruwildre, in een abdie",
+        "Bi Coelne, soe reet die hertoge vrie"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 110,
+       "lines": [
+        "Ende die hertoge thuys, zijts wijs.",
+        "Te Bruwildre, in een abdie",
+        "Bi Coelne, soe reet die hertoge vrie",
+        "Ende hoirde harer alder raet,",
+        "Ende hi offerde, mi verstaet,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 384,
+       "lines": [
+        "Coninc Philips, dat wilt verstaen:",
+        "Als dus dese huwelic was ghedaen",
+        "Sant die hertoge eerbaerlike",
+        "Sinen sone in Vrancrike,",
+        "Bi den coninc sinen zweere,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 675,
+       "lines": [
+        "Van sinen neve van Brabant,",
+        "Als van sijnre moeder wegen.",
+        "Om dat die hertoge viel daer tegen,",
+        "Ende hem des niet en woude ghestaden,",
+        "Heeft hine swaerlijc verladen"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1212,
+       "lines": [
+        "Des anderen daegs, des sijt ghewes,",
+        "Na date des briefs, die vorscreven es,",
+        "Van die hertoge Wencelijn",
+        "Ende vrou Johannen, der vrouwen sijn.",
+        "Dus sceit de keiser met minlichede,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "te bruessel",
+     "type": "bigram",
+     "score": 0.004720705683018193,
+     "known": [
+      {
+       "line_no": 920,
+       "lines": [
+        "Dat men tymmerde Ten Gelove,",
+        "Woendy op den casteel, boven,",
+        "Te Bruessel, dat hiet Monfroet,",
+        "Dats Coudenberghe, verstaet, al bloet.",
+        "Ganus sone, Mondedier,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1571,
+       "lines": [
+        "Waest, die de canesie stecht",
+        "Sente Peters, te Lovene, in stede;",
+        "Ende te Bruessel, sente Goedelen mede.Hs. Ende st te bruessel... st doorgehaald.",
+        "Bl. 18, voorkant.Ende hij woende te Bruessel binnen",
+        "Tusschen .ij. erm vander Sennen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1571,
+       "lines": [
+        "Waest, die de canesie stecht",
+        "Sente Peters, te Lovene, in stede;",
+        "Ende te Bruessel, sente Goedelen mede.Hs. Ende st te bruessel... st doorgehaald.",
+        "Bl. 18, voorkant.Ende hij woende te Bruessel binnen",
+        "Tusschen .ij. erm vander Sennen,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 904,
+       "lines": [
+        "Als men screef int openbaer",
+        "XIIIc vijve ende vijchtich jaer.",
+        "Daer na te Bruessel, ende alsoe vort",
+        "Van steden te steden, daer dat behoert.",
+        "Nu es hertoge Wencelijn"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1239,
+       "lines": [
+        "Die hem willichlijc daertoe deden,",
+        "Ende bereiden haer vaert",
+        "Haestelijc te Bruessel waert;",
+        "Maer eer van Antwerpen die stede",
+        "Ende van den Bossche, ende andere mede,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1331,
+       "lines": [
+        "Waren die Brabantre ontstelt,",
+        "Ende elc stelde hem ter vlochte",
+        "Te Bruessel wert; die ierst mochte",
+        "En verbeide des anders niet.",
+        "Grave Lodewijc niet en liet"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "ende van",
+     "type": "bigram",
+     "score": 0.0046439038746724105,
+     "known": [
+      {
+       "line_no": 245,
+       "lines": [
+        "Wan den coeninc Ferramaonde,",
+        "Die vrome was, van hoegher aert",
+        "Ende van wapenen wyde vermaert.",
+        "Ende Ferremont, die prince vrome,",
+        "Wan die coninc Clodione."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 432,
+       "lines": [
+        "Met hem brachten, verstaet bediet,",
+        "Deen Beerte ende dander Lefde hiet;",
+        "Ende van hem beiden, verstaet mij wale,",
+        "Es comen Berthem ende Leefdale.",
+        "Des mechden waeren der vrouwen by;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 782,
+       "lines": [
+        "Soe willic hebben te minen soene;",
+        "Ic sal hem noch doen spannen croene",
+        "Van Roeme ende van alle desen lande.",
+        "Mynder nichten, der maecht plasande,",
+        "Latic haer vader lant ende goet.’"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 191,
+       "lines": [
+        "Hoe hem te wive was gegeven,",
+        "Die wile dat hi was een kint,",
+        "Ende van verstennessen blint,",
+        "Een edel vrouwe ende een scone,",
+        "Gheboren uter vrancxscer crone."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 221,
+       "lines": [
+        "Bescriven al die generacie,",
+        "Die van desen here ghetrouwe",
+        "Quam, ende van dier goeder vrouwe,",
+        "Die in state lange regneerden,",
+        "Ende Brabant wijslijc regeerden,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 317,
+       "lines": [
+        "Ghegeven soe wort hare te manne",
+        "Grave Willemme van Hollant,",
+        "Van Henegouwe ende van Zeelant;",
+        "Margriete wort te huwelike",
+        "Ghegeven grave Lodewike,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "greve van",
+     "type": "bigram",
+     "score": 0.004443017113428888,
+     "known": [
+      {
+       "line_no": 1302,
+       "lines": [
+        "Daer Roelant ende die ghesellen syn",
+        "Doet bleven, voer Sarresyn;Hs. Doet bleven nae..., nae doorgehaald.",
+        "Die de greve van Henegouwe, Gouweloen,",
+        "Vercochte den Sarregoen,",
+        "Metten .xij. genoeten van Vranckeryke.Hs. ... Vranckerijke: tijt. Z. 4."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1367,
+       "lines": [
+        "Karel die sempel hiet die gone.",
+        "Dese coninc, als ic ben wys,",
+        "Sloech doet den greve van Parys,",
+        "Die Robrecht by namen was geheten.",
+        "Groet orloghe ende swaere veeten"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1533,
+       "lines": [
+        ".M. ende .xv. jaer.",
+        "¶ Greve Henrick douwe syn soene hiet,",
+        "Die hy greve van Lovene liet;",
+        "Want nemmeer hilt hy vanden vader",
+        "Dan Loven, Bruessel, Nijvel te gader."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1001,
+       "lines": [
+        "Dese capitein, wide becant,",
+        "Die vrome waren, stout als werge,",
+        "Midsgader den greve Van den Berghe,",
+        "Ende met meneghen anderen wigant",
+        "Gheboren uut Overlant,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2300,
+       "lines": [
+        "Wort toegheseit, borch ende lant,",
+        "Den hertoge Jan van Brabant,",
+        "Ende den greve van Hollant af,",
+        "Die dorlogen doe begaf.",
+        "Als dit die heere van Saffenberge"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2339,
+       "lines": [
+        "Ende niet te scheiden van Brabant.",
+        "Aldus eest openbaer bekant",
+        "Dat die greve van Hollant",
+        "Daer aen en hadde clein noch groot,",
+        "Al stac hi daer in sinen poot,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "verstaet den",
+     "type": "bigram",
+     "score": 0.004371400198002608,
+     "known": [
+      {
+       "line_no": 264,
+       "lines": [
+        "Van Spandien, van Castelien mede.",
+        "Die v.te hiet, dats waerhede,",
+        "Mercueryus, verstaet den sen,Hs. verstaan...",
+        "Ende was in groten BertanienHs. betanien.",
+        "Coeninc, dat nu heet Inghelant."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 276,
+       "lines": [
+        "Ende hiet met name Ferremont.",
+        "Die ix.te broeder, ic doe u cont,",
+        "Hiet Lucabel, verstaet den sin,",
+        "Ende was coninc in Germaenden,Hs. sin: Germaenden, z. 4.",
+        "Dat Uutrecht ende voert Friesen heet.Hs... prusen heet..."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 281,
+       "lines": [
+        "Ende elc dese coninghe, sekerlec,",
+        "Naem een ser broeders by hem",
+        "Ende maectenen, verstaet den sin,",
+        "Hertoghe binnen sinen lande.",
+        "Die ander .vj., wilt verstanden,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1348,
+       "lines": [
+        "Aldus quam, si u bekant,",
+        "Grave Lodewijc stridender hant",
+        "Tot binnen Bruessel, verstaet den sin,",
+        "Ende heeft die stat genomen in,",
+        "Ende stac sijn bannier in die stede"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1810,
+       "lines": [
+        "Hem eens des jaers alle viere",
+        "Dienen, elc met eenre banniere",
+        "Van harer wapen, verstaet den sijn,",
+        "Van ses weken den termijn,",
+        "Onder elc XXV man"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2399,
+       "lines": [
+        "Donrecht, dwelcke was ghedaen",
+        "Gheerberghen, der vrouwen sijn.",
+        "In desen tijden, verstaet den fijn,",
+        "Hilt van Ardenen grave Godevaert",
+        "Lottrike, dat si u verclaert,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die greve",
+     "type": "bigram",
+     "score": 0.004215170081970997,
+     "known": [
+      {
+       "line_no": 663,
+       "lines": [
+        "Want menich jaer, dats warede,",
+        "Hiet de stede Ten Berghe Cout,",
+        "Eer Lambrecht, die greve out,",
+        "Die canesie daer stichten dede,",
+        "Ende sente Goerix capelle mede,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1585,
+       "lines": [
+        "Screef men doen, dats warede.",
+        "Lambrecht .j. soene liet,",
+        "Die greve Henric bij name hiet;",
+        "Die vrome was ende hoege,",
+        "Ende hielt strijt ende orloghe"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1597,
+       "lines": [
+        "Daer hyen in, verstaet mij wale,",
+        "Vermoerde, ende reet ser veerde.",
+        "Dus bleef Henric, die greve weerde,Hs. Dus bleef lambrecht ... lambrecht doorgehaald en henric erboven gezet.",
+        "Doet, ende vermoert jammerlike,",
+        "Als hij .x. jaer, als prince ryke,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 2339,
+       "lines": [
+        "Ende niet te scheiden van Brabant.",
+        "Aldus eest openbaer bekant",
+        "Dat die greve van Hollant",
+        "Daer aen en hadde clein noch groot,",
+        "Al stac hi daer in sinen poot,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2760,
+       "lines": [
+        "Van Grimbergen des heeren sone,",
+        "Die vromichede was ghewone,",
+        "Die greve van Vierson, ende daer bi",
+        "Die edel heere van Coutsy,",
+        "Casteillon, Arcle, dits waerhede,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 3267,
+       "lines": [
+        "Heeft die bisscop oec ghesonden",
+        "Sijn procureurs, ende daer met",
+        "Die greve van Gelre, dat wet,",
+        "Die sine, als momboir, verstaet den fijn,",
+        "Van der oudster dochter sijn,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die heeren",
+     "type": "bigram",
+     "score": 0.0034915600713073002,
+     "known": [
+      {
+       "line_no": 138,
+       "lines": [
+        "Dus jaeghde wech die hertoghe wilt",
+        "Buten tcloestere met pagie alleyn,",
+        "Ende alle die heeren, groot ende cleyn,",
+        "Liepen tsamen over hoot,",
+        "Ende spraken van den wonder groot"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 309,
+       "lines": [
+        "Als den Spieghel, in vraijen rym,",
+        "Bl. 2, aarkant.Ons doet weten, ende die Cornike:",
+        "Hoe van Brabant die heeren ryke",
+        "Waeren wortel ende fondement,",
+        "Diet kersten ghelove hebben gheprint,Hs. fondement: gheprint, z. 4."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 540,
+       "lines": [
+        "Die edel Cornike, wilt verstaen,",
+        "Ende som die daden, die ghedaen",
+        "Hebben die heeren der Brabansoene.",
+        "Den tyt, woude God, mocht soe noch comen,",
+        "Ghy sout hoeren, groet ende cleine,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 957,
+       "lines": [
+        "Maer eer dat die dachvart schiet",
+        "Sloot men dat, in beide siden",
+        "Die heeren uut Mechelen souden riden",
+        "Effen, ghelijc alsoe si deden.",
+        "Daer na quam met suptylheden"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1642,
+       "lines": [
+        "Van Henegouwe, van Zeelant mede,",
+        "Ende Heere van Vriesen, die dede",
+        "Dedinghen tusscen die heeren beide",
+        "Met alsulken ondersceide,",
+        "Soe dats hen alle beide die heeren"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1644,
+       "lines": [
+        "Dedinghen tusscen die heeren beide",
+        "Met alsulken ondersceide,",
+        "Soe dats hen alle beide die heeren",
+        "In sijn seggen wouden keeren;",
+        "Want hi hen beiden na bestoet"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "wilt verstaen",
+     "type": "bigram",
+     "score": 0.0032856878659892823,
+     "known": [
+      {
+       "line_no": 163,
+       "lines": [
+        "Ende reden na den hertoge goet,",
+        "Maer twas sake tegen spoet;",
+        "Want hi hadde, wilt verstaen,",
+        "Sijn pert doen averecht beslaen.",
+        "Dus soe volghden zy hem contraren."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 413,
+       "lines": [
+        "Eenen broeder, als men mach lesen,",
+        "Hae die maeght, hiet Octaviaen,Hs. Hoe... die Octaviaen.",
+        "Die Karlen, wilt verstaen,",
+        "Coes, teenen ghesellen sine;",
+        "Ende toech soe op den jonghelinc ryne,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 538,
+       "lines": [
+        "Overlopen, nae die warede,",
+        "Ende den tex in ryme besceden:",
+        "Die edel Cornike, wilt verstaen,",
+        "Ende som die daden, die ghedaen",
+        "Hebben die heeren der Brabansoene."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 382,
+       "lines": [
+        "Gheworven hadde voer sinen sone",
+        "Die dochter van der vranxsche crone,",
+        "Coninc Philips, dat wilt verstaen:",
+        "Als dus dese huwelic was ghedaen",
+        "Sant die hertoge eerbaerlike"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 405,
+       "lines": [
+        "Tot sinen vader, diene minde,",
+        "Diene minlic heeft ontfaen.",
+        "Niet langhe daer na, dat wilt verstaen,",
+        "Dat hi in Brabant hadde gewesen,",
+        "Es hem een siecheit aen gheresen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 909,
+       "lines": [
+        "Ende vrou Johanne, die vrouwe sijn,",
+        "In Brabant ghehuldt ende ontfaen,",
+        "Die beide noch, dat wilt verstaen,",
+        "Jonc waren ende clein ghedaeght,",
+        "Doen metter doot wert geplaeght"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "dat die",
+     "type": "bigram",
+     "score": 0.00315646771619459,
+     "known": [
+      {
+       "line_no": 141,
+       "lines": [
+        "Liepen tsamen over hoot,",
+        "Ende spraken van den wonder groot",
+        "Dat die vremde man bedreeff,",
+        "Dat hi en boech noch en neech",
+        "Den hoogen princen, ende offerde voren,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 419,
+       "lines": [
+        "Synder suster, wie herte ende gront",
+        "Karlen op gaf, ende hy haer weder.",
+        "Soe dat die maget met hem neder",
+        "Hier quam, tot den .vij. Tommen,",
+        "Die edele vrouwe, die bloeme jonge,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 647,
+       "lines": [
+        "Al doelende, die ridder coen,",
+        "Reet henen wech, lanx henen der Scelt,",
+        "Soe langhe dat die vrome helt",
+        "Bl. 6, aarkant.In een foreest den wech verloes;",
+        "Ende ter rechter hant op coes"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 155,
+       "lines": [
+        "Dat vort die ieeste worde volbracht",
+        "Bi hen, ende gecontinueert,",
+        "Op dat die dingen ghedeclareert",
+        "Den menscen in den sin mach wesen,",
+        "Diet horen sullen ofte lesen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 160,
+       "lines": [
+        "Dat si daer ane mogen leren",
+        "Die quaetheit haten, die doeght vort keren,",
+        "Op dat die scoen ghesciennessen",
+        "Bliven in ghedinckenessen,",
+        "Die anders souden verdonckert bliven,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 167,
+       "lines": [
+        "Nu willic keeren ter istorien,",
+        "Ende vort continueren",
+        "Hoe dat die brabantsche heeren",
+        "Brabant hebben geregeert,",
+        "Die af sijn comen ghedescendeert"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "van bruessel",
+     "type": "bigram",
+     "score": 0.002800884531650883,
+     "known": [
+      {
+       "line_no": 1628,
+       "lines": [
+        "Hof, te Lovene, in die sale:",
+        "Bij hem was die heere van Leefdale,",
+        "Ende van Bruessel de borchgreve, Boudewyn;",
+        "Heer Henric van Assche, die prince fin;",
+        "Ende her Wernier van Orsmale mede;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1672,
+       "lines": [
+        "Byden wille van vader ende moeder;",
+        "Ende voerde met hem, des syt vroeder,",
+        "Van Bruessel den borchgreve Boudewijn,",
+        "Ende van Leefdale den heere fin;",
+        "Den heere van Assche, verstaet mij wale,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1751,
+       "lines": [
+        "Ende, metten sweerde van stale claere,",
+        "Soe smet hij in greven hoep;Hs. Soe sniet hij. Vrgl. 466.",
+        "Ende die borchgreve van Bruessel oec",
+        "Veldesse, met twee, met drien;",
+        "Soe dede oic die ridder vrye"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1261,
+       "lines": [
+        "In Brabant neder gheslegen ware.",
+        "Als die gemeinten dat vernamen",
+        "Van Loven, van Bruessel, al te samen,",
+        "Riepen si, met groten ghemute,",
+        "Dat si wouden trecken ute"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1296,
+       "lines": [
+        "Dus trac tgemeinte, met haren rote,",
+        "Buten Bruessel tot aen den Scote,",
+        "Van Loven en van Bruessel beide,",
+        "Jegen des graven mogentheide.",
+        "Der edelre was daer clein ghetal,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1374,
+       "lines": [
+        "Dat striden es met haesticheit,",
+        "Sonder goede voorsienicheit.",
+        "Hadden van Loven van Bruessel beide",
+        "Die ghemeinte met wijsheide",
+        "Haers heren verbeit, ende oec mede"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "den hertoghe",
+     "type": "bigram",
+     "score": 0.0027980811850784534,
+     "known": [
+      {
+       "line_no": 353,
+       "lines": [
+        "Die namen al der heeren ryne,",
+        "Die, van voer Christus geboert",
+        "Tot op den hertoghe Anthoenys, hoert,",
+        "Hebben geregeert Brabant,",
+        "Ghelyc Jacop van MerlantHs. ... jacoc, z. 10."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 402,
+       "lines": [
+        "Al daer sittende voer oghen.",
+        "Met gepeyse wert daer getoegen",
+        "Den herte uut des anders lichameHs. Den hertoghe..., hertoghe doorgehaald van den schrijver.",
+        "Ende met begeerten verenech samen,",
+        "Bl. 3, aarkant.Daerse die edele natuere toe bracht;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 889,
+       "lines": [
+        "Daer hem tryke casteel sterke",
+        "Op was gegeven, van diet hielden;",
+        "Ende doen gaf hyt den hertoghe milde,",
+        "Ende hiet lant van den Riet,",
+        "Ende sient bleeft hetene, verstaet bediet,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 326,
+       "lines": [
+        "Die joncste dochter, vrou Marie,",
+        "Nam te manne, bi svader tide,",
+        "Van Gelder den hertoghe Reinoute.",
+        "Dus bestaedde die wise, die stoute,",
+        "Die derde Jan, dus hoechelike,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1108,
+       "lines": [
+        "Item, oft bi den Gods ghebiede",
+        "Vrouwe Johanne van der werelt sciede",
+        "Voer den hertoghe Wencelijn,",
+        "Sonder oer van den live sijn,",
+        "Soe soude Wencelijn succederen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1191,
+       "lines": [
+        "Ende sculdich waren, ende tasten aen",
+        "Des keisers hant, met ripen sinne,",
+        "Den hertoghe ende den hertoginne,",
+        "Dat si dese vorseide pointen al,",
+        "Ende elc van hen, houden sal"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "u verclaert",
+     "type": "bigram",
+     "score": 0.002729713141605494,
+     "known": [
+      {
+       "line_no": 697,
+       "lines": [
+        "Te nacht moetj bliven by mij:",
+        "Gherne salic syn u weert.’",
+        "Dus bleef hy, sy u verclaert,",
+        "Breboen, tot smorgens, dat men sach",
+        "Verbaren den scoenen dach."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 749,
+       "lines": [
+        "Daeren Swane, die vrouwe scoen,",
+        "Ontfinc, in vriendelike aert;",
+        "Want segen den keiser, sy u verclaert,",
+        "Voer dedel vrouwe ende haer sone beideHs. ... ende haer soneder beide. Schrijver en weet niet of hij sonder beiden (zonder wachten) of sone beide gehoord heeft.",
+        "Die salutasie ende die vrindelichede,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 771,
+       "lines": [
+        "Nu hoert, ic sal u laten hoeren",
+        "Hoe Breboen heere in brabant wert",
+        "Ende hoe hy dierste, sy u verclaert,",
+        "Hertoghe was, voer Christus tyt.",
+        "Octaviaen, die keiser ryc,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1856,
+       "lines": [
+        "Die wile dorloghe heeft ghereden,",
+        "Cost ende scade groot heeft leden,",
+        "Mids dat den peis, si u verclaert,",
+        "Die gemaect ende besegelt waert",
+        "Tot Assche, alsoe die brieve uut spreken,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2401,
+       "lines": [
+        "In desen tijden, verstaet den fijn,",
+        "Hilt van Ardenen grave Godevaert",
+        "Lottrike, dat si u verclaert,",
+        "Dwelc hem die keiser hadde ghegeven,",
+        "Als u voren es bescreven."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2586,
+       "lines": [
+        "Ende van Grimbergen den heere,",
+        "Die malcandren scaedden seere;",
+        "Ende sunderlinge, si u verclaert,",
+        "Heeft die hertoge Godevaert",
+        "Den heere van Grimbergen, ter waerheden,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "ons heeren",
+     "type": "bigram",
+     "score": 0.002711059521427689,
+     "known": [
+      {
+       "line_no": 26,
+       "lines": [
+        "Besitten moet hoeghe Jherusalem",
+        "Dies bit hennenvan merchtenen",
+        "Int yaer ons heeren m. CCCC",
+        "Ende xiiij wie dats v'wondert",
+        "In meerte de x. calende"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1186,
+       "lines": [
+        "Regeerdj Brabant, hoert nae mij.",
+        "Carnasioen, al sonder sy,",
+        "Screef men ons Heeren ¶ .vij.c",
+        "Ende .xlij., wie dats wondert.",
+        "Te sent Denys, met groeter haven,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1208,
+       "lines": [
+        "¤ Brabant der jaeren .x. ende .ix.",
+        "Ende, doen hy sciet van desen levene,",
+        "Screef carnasioen ons heeren",
+        ".Vij.c ende daertoe meere",
+        "Bl. 13, aarkant..Lxix., nu wilt hoeren."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 432,
+       "lines": [
+        "Voer sente Marien Magdalenen,",
+        "Dat menich Ludeker moest beweenen,",
+        "Dit was in ons Heeren jaer",
+        "M IIIc dat es waer,",
+        "Ende daer toe XL ende sevene."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 519,
+       "lines": [
+        "Verslagen bleef in eenen wige,",
+        "Ende met hem menich man voerbaer.",
+        "Dit ghesciede in Ons Heeren jaer",
+        "M. CCC. viertich ende vive.",
+        "Ende want van sinen live"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 862,
+       "lines": [
+        "Op dese werelt, dat si u cont,",
+        "Op senter Niclaeus avont,",
+        "Die lach in Ons Heeren jaer",
+        "Als men screef int openbaer",
+        "M. CCC. vijftich ende vive."
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "brabant ende",
+     "type": "bigram",
+     "score": 0.0027076659210225245,
+     "known": [
+      {
+       "line_no": 105,
+       "lines": [
+        "Soe ghevic u, in uwer gewelt,",
+        "In vryer erve dat velt.’",
+        "Noch heetet le terre de Brabant.",
+        "Ende die coninc van Vranckelant",
+        "Nam oirloff, ende voer te Parijs,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1140,
+       "lines": [
+        "Dese bastaert hiet Kaerle Marteel,",
+        "Die nae den vader al geheel",
+        "Besat Brabant ende Lotrijke;",
+        "Want doen sijn vader, die hertoge ryke,",
+        "Sterf, en liet hij gheen kent.Hs. Sterf ende."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1335,
+       "lines": [
+        "Ende Lodewijc regeerde, sekerleke,",
+        "Bl. 15, voorkant.Dies keisers croene, ende Vrancke lant,",
+        ".Xxvj. jaer, ende Brabant;",
+        "Ende men screef, hoerter naer,",
+        ".Viij. ende .xlij. jaer."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1133,
+       "lines": [
+        "Soe soude die hertoeghdomme bliven,",
+        "Die lande, ende die heerlicheide,",
+        "Van Brabant ende van Limborch beide,",
+        "Op keiser Karlen, sonder rigeur,",
+        "Als op den wittegen successeur;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1145,
+       "lines": [
+        "Dat vrou Johanne ende Wencelijn",
+        "Noch die lande, die ic voersede,",
+        "Van Brabant ende van Limborch mede,",
+        "Met haren vianden in genen sake",
+        "Pays noch bestant en sullen maken,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1823,
+       "lines": [
+        "Twee baenrutse, ij ridders gepresen.",
+        "Dit sullen si doen, als voren ghenant,",
+        "Ten coste des lands van Brabant;",
+        "Ende mids dien sal ons neve vorseit",
+        "Quijt schelden trouwe ende eit"
+       ],
+       "match_index": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "questioned_label": "Brabantsche Yeesten, boek 7",
+   "similarity": 0.30258960406508345,
+   "items": [
+    {
+     "term": "van brabant",
+     "type": "bigram",
+     "score": 0.06075954991970272,
+     "known": [
+      {
+       "line_no": 44,
+       "lines": [
+        "Bescreven met haren bloede root",
+        "In een scale, dair sy uut dranc,",
+        "Soe dat Hertoge Jan van Brabant",
+        "Reet, doe hi verstaet die mere;",
+        "Op twee dage reet die edel heere"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 88,
+       "lines": [
+        "Diet vremde had, ende vraechde of selc dinc",
+        "Die zede ware in Duytsche lant?",
+        "Doen seide die hertoge van Brabant:",
+        "‘Neent, her coninc, maer waendi,",
+        "Dat ic niet zoe rijke en si,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 128,
+       "lines": [
+        "Schoet een heraut [bi] te dien tiden,",
+        "Ende hilt hem den stegereep sijn,",
+        "Ende seyde: ‘Van Brabant prince fijn,",
+        "God wille u nemen in sijnder hoeden.’",
+        "Doen antwoirde die prince goede:"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 38,
+       "lines": [
+        "Ende dan beveelict iemande voort",
+        "Te vervolghene eenpaerliken",
+        "Van Brabant die edel croniken.",
+        "Als vrou Johanne was verscheiden,",
+        "Soe vergaderden sonder beiden"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 42,
+       "lines": [
+        "Soe vergaderden sonder beiden",
+        "Die drie state al te hant",
+        "Van den lande van Brabant,",
+        "Ende sloten samentlic ter vaert",
+        "Dat si Anthonise den ruwaert"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 61,
+       "lines": [
+        "In presentien van sinen vader",
+        "Ende vrouwe Johannen, ende algader",
+        "Den drien staten van Brabant,",
+        "Hadde opghedraghen dlant",
+        "Ende thertoghedom geheellike,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die hertoghe",
+     "type": "bigram",
+     "score": 0.019778783876689462,
+     "known": [
+      {
+       "line_no": 70,
+       "lines": [
+        "Sijnen zwager, in clare dinc,",
+        "‘Wie metten anderen eten soude?’",
+        "Doen soe seyde die hertoghe boude:",
+        "‘Wie yerst bereet hadde sijn spijse.’",
+        "Het consenteerde die coninc wise."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 75,
+       "lines": [
+        "Hi dede verbieden dat men colen noch haut",
+        "En vercochte den hertoge stout.",
+        "Ende als die hertoghe verstont dat",
+        "Dede hi alle die planen nappen van der stat",
+        "Coepen, ende alle die scotelen mede,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 136,
+       "lines": [
+        "Haren overmoet word hen gerooft",
+        "Dorren zy my bieden velt ende schilt.’",
+        "Dus jaeghde wech die hertoghe wilt",
+        "Buten tcloestere met pagie alleyn,",
+        "Ende alle die heeren, groot ende cleyn,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 219,
+       "lines": [
+        "Ende alle sijn ondersaten",
+        "Onder recht in rasten saten,",
+        "Bedacht die hertoghe ander dinghen",
+        "Op te setten ende te volbringhen.",
+        "Dit was, op dat ghijt mooght verstaen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 223,
+       "lines": [
+        "Dit was, op dat ghijt mooght verstaen,",
+        "Om dat te leene niet hadde ontfaen",
+        "Die hertoghe van Ghelre die stat ende dlant",
+        "Van den Grave, si u bekant,",
+        "Alsoe hi sculdich was te doene,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 239,
+       "lines": [
+        "Ende ordineren groote dinghen,",
+        "Maer aen Gode leghet volbringhen.",
+        "Al hadde die hertoghe vele gheacht,",
+        "Die zake en wert soe niet volbracht,",
+        "Want God die zake cort verkeerde"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "greve van",
+     "type": "bigram",
+     "score": 0.010752889429699413,
+     "known": [
+      {
+       "line_no": 1302,
+       "lines": [
+        "Daer Roelant ende die ghesellen syn",
+        "Doet bleven, voer Sarresyn;Hs. Doet bleven nae..., nae doorgehaald.",
+        "Die de greve van Henegouwe, Gouweloen,",
+        "Vercochte den Sarregoen,",
+        "Metten .xij. genoeten van Vranckeryke.Hs. ... Vranckerijke: tijt. Z. 4."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1367,
+       "lines": [
+        "Karel die sempel hiet die gone.",
+        "Dese coninc, als ic ben wys,",
+        "Sloech doet den greve van Parys,",
+        "Die Robrecht by namen was geheten.",
+        "Groet orloghe ende swaere veeten"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1533,
+       "lines": [
+        ".M. ende .xv. jaer.",
+        "¶ Greve Henrick douwe syn soene hiet,",
+        "Die hy greve van Lovene liet;",
+        "Want nemmeer hilt hy vanden vader",
+        "Dan Loven, Bruessel, Nijvel te gader."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 121,
+       "lines": [
+        "Coninc Jan van Vranckerijc,",
+        "Ende die grootmoedeghe Lodewijc,",
+        "Greve van Vlaendren, te Gods eeren,",
+        "Waren beide sijn witheeren;",
+        "Die vierde keiser Karle genant,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 149,
+       "lines": [
+        "Van Bourgogne, die, na svader doot,",
+        "Wert van Bourgognen hertoghe groot",
+        "Ende greve van Vlaendren, daer toe meere",
+        "Van vele andren landen heere;",
+        "Sijn joncste brueder, Philips genant,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 152,
+       "lines": [
+        "Van vele andren landen heere;",
+        "Sijn joncste brueder, Philips genant,",
+        "Greve van Nyveers bekant,",
+        "Van Retheest, van Retheloes derghelijc.",
+        "Hertoghe Lupoldus van Oostrijc,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "verstaet den",
+     "type": "bigram",
+     "score": 0.010150505852666867,
+     "known": [
+      {
+       "line_no": 264,
+       "lines": [
+        "Van Spandien, van Castelien mede.",
+        "Die v.te hiet, dats waerhede,",
+        "Mercueryus, verstaet den sen,Hs. verstaan...",
+        "Ende was in groten BertanienHs. betanien.",
+        "Coeninc, dat nu heet Inghelant."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 276,
+       "lines": [
+        "Ende hiet met name Ferremont.",
+        "Die ix.te broeder, ic doe u cont,",
+        "Hiet Lucabel, verstaet den sin,",
+        "Ende was coninc in Germaenden,Hs. sin: Germaenden, z. 4.",
+        "Dat Uutrecht ende voert Friesen heet.Hs... prusen heet..."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 281,
+       "lines": [
+        "Ende elc dese coninghe, sekerlec,",
+        "Naem een ser broeders by hem",
+        "Ende maectenen, verstaet den sin,",
+        "Hertoghe binnen sinen lande.",
+        "Die ander .vj., wilt verstanden,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 515,
+       "lines": [
+        "Wel ende eerlike was ghedaen;",
+        "Voort wort overdreghen saen",
+        "Dat die hertoghe, verstaet den fijn,",
+        "Metten volke ende hoope sijn",
+        "Van wapenen, soude comen in"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 518,
+       "lines": [
+        "Metten volke ende hoope sijn",
+        "Van wapenen, soude comen in",
+        "Ende behoorlec, verstaet den sin,",
+        "Ende tamelec ontfanghen werden;",
+        "Daer in besproken met voorwerden,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 545,
+       "lines": [
+        "Te Tricht daer met becommert waren",
+        "Met vele hoopen ende groote scaren",
+        "Van tshertoghen volcke, verstaet den sin,",
+        "Aldus te latene uut ende in;",
+        "Ende na der noenen, verstaet dat,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die greve",
+     "type": "bigram",
+     "score": 0.009194172264469875,
+     "known": [
+      {
+       "line_no": 663,
+       "lines": [
+        "Want menich jaer, dats warede,",
+        "Hiet de stede Ten Berghe Cout,",
+        "Eer Lambrecht, die greve out,",
+        "Die canesie daer stichten dede,",
+        "Ende sente Goerix capelle mede,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1585,
+       "lines": [
+        "Screef men doen, dats warede.",
+        "Lambrecht .j. soene liet,",
+        "Die greve Henric bij name hiet;",
+        "Die vrome was ende hoege,",
+        "Ende hielt strijt ende orloghe"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1597,
+       "lines": [
+        "Daer hyen in, verstaet mij wale,",
+        "Vermoerde, ende reet ser veerde.",
+        "Dus bleef Henric, die greve weerde,Hs. Dus bleef lambrecht ... lambrecht doorgehaald en henric erboven gezet.",
+        "Doet, ende vermoert jammerlike,",
+        "Als hij .x. jaer, als prince ryke,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 158,
+       "lines": [
+        "Greve van Henegouwe, van Hollant",
+        "Ende van Zeelant mogentlijc,",
+        "Ende die greve derghelijc",
+        "Van Savoyen, si u verclaert,",
+        "Die welke sint hertoghe waert,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 597,
+       "lines": [
+        "Door die stat van Tricht gheliden en conden.",
+        "Nochtan en was te dien stonden",
+        "Die greve van Nyvers, wats ghesciet,",
+        "Met sinen hoope aen comen niet;",
+        "Ende die van Antwerpen, hoordic lien."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 662,
+       "lines": [
+        "Tusschen hen entie Ludikeren",
+        "Te dedinghene goeden vrede.",
+        "Maer wat die greve daer toe dede,",
+        "Hi en conste in dier bederven",
+        "Met allen niet goets verwerven;"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "heere van",
+     "type": "bigram",
+     "score": 0.00910295277271693,
+     "known": [
+      {
+       "line_no": 938,
+       "lines": [
+        "Welc Hoeijoen woende op der Masen cant,",
+        "Te Hoey, dat nae hem es genamt,",
+        "Ende was heere van Ardenen,",
+        "Ende van den Eyfele, ende alsoe henen,",
+        "Van Lymborch, van Retters, van Pierlepont,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1588,
+       "lines": [
+        "Die vrome was ende hoege,",
+        "Ende hielt strijt ende orloghe",
+        "Seghen .j. heere van Utrecht,",
+        "Die hij vinc in .j. gevecht,",
+        "Daer hij seghen hem hielt stryt;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1627,
+       "lines": [
+        "Eens hielt syn vader, hoegeboeren,",
+        "Hof, te Lovene, in die sale:",
+        "Bij hem was die heere van Leefdale,",
+        "Ende van Bruessel de borchgreve, Boudewyn;",
+        "Heer Henric van Assche, die prince fin;"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 868,
+       "lines": [
+        "Daer maecte hi, ic seker ben,",
+        "VI capiteine in corter stont:",
+        "Den heere van Heynsberghe, si u cont,",
+        "Her Sceiffaerde van Merode der met,",
+        "Den vooght van Coelne, dat wet,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 871,
+       "lines": [
+        "Her Sceiffaerde van Merode der met,",
+        "Den vooght van Coelne, dat wet,",
+        "Den vooght van Alpen, ende den heere",
+        "Van Rey, ende daer toe meere",
+        "Den heere van Milendonck, dits claer;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 873,
+       "lines": [
+        "Den vooght van Alpen, ende den heere",
+        "Van Rey, ende daer toe meere",
+        "Den heere van Milendonck, dits claer;",
+        "Ende elc van desen, dat es waer,",
+        "Capiteinen, ic zeker ben,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "den hertoghe",
+     "type": "bigram",
+     "score": 0.008742880920478271,
+     "known": [
+      {
+       "line_no": 353,
+       "lines": [
+        "Die namen al der heeren ryne,",
+        "Die, van voer Christus geboert",
+        "Tot op den hertoghe Anthoenys, hoert,",
+        "Hebben geregeert Brabant,",
+        "Ghelyc Jacop van MerlantHs. ... jacoc, z. 10."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 402,
+       "lines": [
+        "Al daer sittende voer oghen.",
+        "Met gepeyse wert daer getoegen",
+        "Den herte uut des anders lichameHs. Den hertoghe..., hertoghe doorgehaald van den schrijver.",
+        "Ende met begeerten verenech samen,",
+        "Bl. 3, aarkant.Daerse die edele natuere toe bracht;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 889,
+       "lines": [
+        "Daer hem tryke casteel sterke",
+        "Op was gegeven, van diet hielden;",
+        "Ende doen gaf hyt den hertoghe milde,",
+        "Ende hiet lant van den Riet,",
+        "Ende sient bleeft hetene, verstaet bediet,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 502,
+       "lines": [
+        "Costumen, ende previlegien.",
+        "Aldus gheviel, ic segghe u dat,",
+        "Tusschen den hertoghe ende tstat",
+        "Twist, ghescille ende stoot;",
+        "Want die van Tricht hilden al bloot"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 511,
+       "lines": [
+        "Als ghedeputeerde ghesonden,",
+        "Hebben die zake te dien stonden",
+        "Tusschen den hertoghe entie stat",
+        "Van Tricht vereenicht: twelke dat",
+        "Wel ende eerlike was ghedaen;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 551,
+       "lines": [
+        "Met processien, met crucen, met vanen",
+        "Oetmoedelijc, hoort mi vermanen,",
+        "Jeghen den hertoghe comen daer,",
+        "Ende hebbene gheleit daer naer",
+        "Te Sinte Servaes, dat segghic di,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die heere",
+     "type": "bigram",
+     "score": 0.006551464513080989,
+     "known": [
+      {
+       "line_no": 37,
+       "lines": [
+        "Van sijnder suster der coninghinne,",
+        "Die men onverdient ter doot woude bringen;",
+        "Want vander Broetsen her Peter, die heere,",
+        "Seide haer op loghene ende onneere.",
+        "Soe deetse die coninc vaen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 216,
+       "lines": [
+        "Moeder ende maget ghenaes,",
+        "Dat zij haeren weerden soene",
+        "Wil bidden, dat hy die heere vrome",
+        "Bringhe int hemels palais,Hs. ... was: ghenaes: palais, z. 4.",
+        "Die de ryke warande scone,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 964,
+       "lines": [
+        "Want teser materien niet en hoert.",
+        "Op Maersiaente stel ic mij voert,",
+        "Die heere was van menegen lande;",
+        "Want Henegouwe, wilt verstanden,",
+        "Aertois ende Picaerdien"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 467,
+       "lines": [
+        "Ende metten ghedeputeerden te hant",
+        "Van sinen steden van Brabant,",
+        "Tot int heer van Ludike, daer die heere",
+        "Om den peis arbeide seere",
+        "Tusschen hertoghe Janne van Beieren"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 685,
+       "lines": [
+        "Om vrede te maken, doe ic u ghewach,",
+        "In october den XVIIsten\n dach;",
+        "Ende daer maecte die heere valiant",
+        "Van ses weken een bestant",
+        "Tusschen Ludike ende Tricht."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 713,
+       "lines": [
+        "Hier na soe trocken, des sijt vroeder,",
+        "Die hertoghe ende met hem sijn broeder,",
+        "Van Nyveers die heere valiant,",
+        "Met ridderen, met cnapen uut Brabant,",
+        "Die daghelijcs, hoort mi verclaren,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "verstaet den sen",
+     "type": "trigram",
+     "score": 0.005329823852394218,
+     "known": [
+      {
+       "line_no": 264,
+       "lines": [
+        "Van Spandien, van Castelien mede.",
+        "Die v.te hiet, dats waerhede,",
+        "Mercueryus, verstaet den sen,Hs. verstaan...",
+        "Ende was in groten BertanienHs. betanien.",
+        "Coeninc, dat nu heet Inghelant."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 745,
+       "lines": [
+        "Ridder ende knechte, in goeder trouwen,",
+        "Nam die keiser in deel met hem",
+        "Ende voer, verstaet den sen,Hs. Ende voert ...",
+        "Te Nijemeghen, met Breboen,Hs. Te nijemeghem, 't derde been der -m van nijemeghem doorgehaald.",
+        "Daeren Swane, die vrouwe scoen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 899,
+       "lines": [
+        "Ende hiet Cameryke, om die sake.",
+        "Ende, doen hij hae syn her by hem,",
+        "Voer hij te Nijemegen, verstaet den sen,",
+        "Ende daer liet hij der suster synHs. ... der suster syn. Z. 4, 10, 621.",
+        "Ende harer dochter en den hertoghe fynHs. ... harer dochter. Z. 4, 10, 621, 726."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1802,
+       "lines": [
+        "Versocht werden, groot of cleen;",
+        "Ende ocht ghebeurde bi ons, bi hen,",
+        "Dat eneghe lande, verstaet den sen,",
+        "Fortretsen, slote, dorpen of steden,",
+        "Of enegherhande plaetsen mede"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 5636,
+       "lines": [
+        "Durende in eendrechticheiden,",
+        "Onghesondert ende onghesceiden",
+        "Bi een te blivene, verstaet den sen;",
+        "Ende ocht den lande oft eneghen van hen",
+        "Last of commer enegherande"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 5726,
+       "lines": [
+        "Twee prelaten, drie baenrotsen, twee ridderen,",
+        "Ende vier gheborteghe poorteren,",
+        "Als met namen, verstaet den sen,",
+        "Heere Janne van Hafflighem,",
+        "Ende van Tongerloo heere Janne,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "ende van",
+     "type": "bigram",
+     "score": 0.005129025769664628,
+     "known": [
+      {
+       "line_no": 245,
+       "lines": [
+        "Wan den coeninc Ferramaonde,",
+        "Die vrome was, van hoegher aert",
+        "Ende van wapenen wyde vermaert.",
+        "Ende Ferremont, die prince vrome,",
+        "Wan die coninc Clodione."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 432,
+       "lines": [
+        "Met hem brachten, verstaet bediet,",
+        "Deen Beerte ende dander Lefde hiet;",
+        "Ende van hem beiden, verstaet mij wale,",
+        "Es comen Berthem ende Leefdale.",
+        "Des mechden waeren der vrouwen by;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 782,
+       "lines": [
+        "Soe willic hebben te minen soene;",
+        "Ic sal hem noch doen spannen croene",
+        "Van Roeme ende van alle desen lande.",
+        "Mynder nichten, der maecht plasande,",
+        "Latic haer vader lant ende goet.’"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 131,
+       "lines": [
+        "Coninc Karle van Vranckerijc,",
+        "Die wise, ende hertoghe Lodewijc",
+        "Van Anjouwen, ende van Berri",
+        "Hertoghe Jan, dat seggic di,",
+        "Dese drie brueders valiant"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 136,
+       "lines": [
+        "Waren sijn oome, es mi bekant.",
+        "Van Sicilien, coninc Lodewijc,",
+        "Ende van Orliens derghelijc",
+        "Hertoghe Lodewijc, dits waerheide,",
+        "Waren sijns ooms kinder beide."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 157,
+       "lines": [
+        "Ende hertoghe Willem van Beierlant,",
+        "Greve van Henegouwe, van Hollant",
+        "Ende van Zeelant mogentlijc,",
+        "Ende die greve derghelijc",
+        "Van Savoyen, si u verclaert,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "den sen",
+     "type": "bigram",
+     "score": 0.005055271088794001,
+     "known": [
+      {
+       "line_no": 264,
+       "lines": [
+        "Van Spandien, van Castelien mede.",
+        "Die v.te hiet, dats waerhede,",
+        "Mercueryus, verstaet den sen,Hs. verstaan...",
+        "Ende was in groten BertanienHs. betanien.",
+        "Coeninc, dat nu heet Inghelant."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 745,
+       "lines": [
+        "Ridder ende knechte, in goeder trouwen,",
+        "Nam die keiser in deel met hem",
+        "Ende voer, verstaet den sen,Hs. Ende voert ...",
+        "Te Nijemeghen, met Breboen,Hs. Te nijemeghem, 't derde been der -m van nijemeghem doorgehaald.",
+        "Daeren Swane, die vrouwe scoen,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 899,
+       "lines": [
+        "Ende hiet Cameryke, om die sake.",
+        "Ende, doen hij hae syn her by hem,",
+        "Voer hij te Nijemegen, verstaet den sen,",
+        "Ende daer liet hij der suster synHs. ... der suster syn. Z. 4, 10, 621.",
+        "Ende harer dochter en den hertoghe fynHs. ... harer dochter. Z. 4, 10, 621, 726."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1802,
+       "lines": [
+        "Versocht werden, groot of cleen;",
+        "Ende ocht ghebeurde bi ons, bi hen,",
+        "Dat eneghe lande, verstaet den sen,",
+        "Fortretsen, slote, dorpen of steden,",
+        "Of enegherhande plaetsen mede"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 5636,
+       "lines": [
+        "Durende in eendrechticheiden,",
+        "Onghesondert ende onghesceiden",
+        "Bi een te blivene, verstaet den sen;",
+        "Ende ocht den lande oft eneghen van hen",
+        "Last of commer enegherande"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 5726,
+       "lines": [
+        "Twee prelaten, drie baenrotsen, twee ridderen,",
+        "Ende vier gheborteghe poorteren,",
+        "Als met namen, verstaet den sen,",
+        "Heere Janne van Hafflighem,",
+        "Ende van Tongerloo heere Janne,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "ende die",
+     "type": "bigram",
+     "score": 0.004773598201334988,
+     "known": [
+      {
+       "line_no": 61,
+       "lines": [
+        "Hanct den stegereep des hertogen",
+        "Te Parijs, voir die zale hoghe.",
+        "Ende die coninc van Vranckerijc",
+        "Quam metten hertoge te dier tijt",
+        "Tot sinte Quintijns in Vermandois:"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 106,
+       "lines": [
+        "In vryer erve dat velt.’",
+        "Noch heetet le terre de Brabant.",
+        "Ende die coninc van Vranckelant",
+        "Nam oirloff, ende voer te Parijs,",
+        "Ende die hertoge thuys, zijts wijs."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 108,
+       "lines": [
+        "Ende die coninc van Vranckelant",
+        "Nam oirloff, ende voer te Parijs,",
+        "Ende die hertoge thuys, zijts wijs.",
+        "Te Bruwildre, in een abdie",
+        "Bi Coelne, soe reet die hertoge vrie"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 114,
+       "lines": [
+        "Coninc van Vrancrike bekant,",
+        "Coninc Jan van Behem, dedel man,",
+        "Ende die derde hertoghe Jan",
+        "Van Brabant ende grave Lodewijc",
+        "Van Vlaendren, doude, dese samentlijc,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 120,
+       "lines": [
+        "Waren sijn over oudervadre.",
+        "Coninc Jan van Vranckerijc,",
+        "Ende die grootmoedeghe Lodewijc,",
+        "Greve van Vlaendren, te Gods eeren,",
+        "Waren beide sijn witheeren;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 158,
+       "lines": [
+        "Greve van Henegouwe, van Hollant",
+        "Ende van Zeelant mogentlijc,",
+        "Ende die greve derghelijc",
+        "Van Savoyen, si u verclaert,",
+        "Die welke sint hertoghe waert,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "hertoghe jan",
+     "type": "bigram",
+     "score": 0.0038247450624476,
+     "known": [
+      {
+       "line_no": 31,
+       "lines": [
+        "Soe makes henne een eynde",
+        "Die gode bit......",
+        "Als van Woeronc quam hertoghe Jan,",
+        "Daer hi menigen prince verwan,",
+        "Soe quam hem eene niemare,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 3044,
+       "lines": [
+        "Ende men screef, op die stont,",
+        ".Xijc. .lxxx. jaer ende .viij.,",
+        "Dat dijerste hertoghe Jan, hoech van machte,",
+        "Te Woerenc wan Lemborch rike lant.Hs. Te Woerenc want...",
+        "Daer hij den leeu van kele, rappant,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 3054,
+       "lines": [
+        "In Brabant, als prince fyn.",
+        "Op sente bonefacius dach was den stryt.",
+        "Dese hertoghe Jan was in Vrankeryc,",
+        "Daer men synder suster, der coeninginnen,",
+        "Sonder verdiente, ter doet woude bringen;"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 58,
+       "lines": [
+        "Die deilinghe hadden ghelooft te houwen,",
+        "Ende verteghen hadden op tgone;",
+        "Ende hertoghe Jan, sijn oudste sone,",
+        "In presentien van sinen vader",
+        "Ende vrouwe Johannen, ende algader"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 114,
+       "lines": [
+        "Coninc van Vrancrike bekant,",
+        "Coninc Jan van Behem, dedel man,",
+        "Ende die derde hertoghe Jan",
+        "Van Brabant ende grave Lodewijc",
+        "Van Vlaendren, doude, dese samentlijc,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 132,
+       "lines": [
+        "Die wise, ende hertoghe Lodewijc",
+        "Van Anjouwen, ende van Berri",
+        "Hertoghe Jan, dat seggic di,",
+        "Dese drie brueders valiant",
+        "Waren sijn oome, es mi bekant."
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "in brabant",
+     "type": "bigram",
+     "score": 0.0033651292688147987,
+     "known": [
+      {
+       "line_no": 770,
+       "lines": [
+        "Menschelec woude syn gheboren.",
+        "Nu hoert, ic sal u laten hoeren",
+        "Hoe Breboen heere in brabant wert",
+        "Ende hoe hy dierste, sy u verclaert,",
+        "Hertoghe was, voer Christus tyt."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1070,
+       "lines": [
+        "Te Lande dat hy woenende was.",
+        "Syn soene hiet Puppyn, als ic las,",
+        "Ende was dierste hertoghe in Brabant,",
+        "Jae kersten, sij u becant.",
+        "Ende des hertoghe Puppyn"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1082,
+       "lines": [
+        "Van sente Gertruden, der maget goet.",
+        "Ende doen Puppyn, des syt vroet,",
+        "IJerst hertoge wert in Brabant,",
+        "Screef men, als ic gescreven vant,",
+        ".Vj.c ende .xvij. jaer ende .xxx. regeerde, naer,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 197,
+       "lines": [
+        "Ende hilt justicie int Brabantsche perc.",
+        "Al over al, alsoe sterc,",
+        "Dat men in Brabant niet meer en sach",
+        "Soe vele steltghenghers alst plach.",
+        "Die steltmakers, mids desen dinghe,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 302,
+       "lines": [
+        "Die hi hadde in den sin ghenomen;",
+        "Ende versocht aen sijn lant",
+        "Dienst van volcke, in Brabant,",
+        "Om hem na te volghene houde",
+        "Daer hi henen trecken soude."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 646,
+       "lines": [
+        "Ende daer toe worden gestelt termine.",
+        "Voort wert ghededingt al te hant,",
+        "Dat hertoghe Reinout in Brabant",
+        "Comen soude, rechte voort,",
+        "Ende den Grave metter toebehoort"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "hertoghe van",
+     "type": "bigram",
+     "score": 0.003177724079429351,
+     "known": [
+      {
+       "line_no": 797,
+       "lines": [
+        "Mynder nichten, hoech gheboren,Hs. Mynder nichten. Z. 4, 10.",
+        "Soe gevic u, ende al huer lant,",
+        "Ende maeck u hertoghe van: BrabantHs. ... u hertoghe van. Aldus verbeeldt schrijver 't gene hij zal gehoord hebben, te weten: u 'r (u er) hertoge van, met 'r en h ineen versmolten. Z. 4, 10, 621.",
+        "Saelt nae u heten emmermeere.",
+        "Oic wil ic dat u hulde ende sweere"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 797,
+       "lines": [
+        "Mynder nichten, hoech gheboren,Hs. Mynder nichten. Z. 4, 10.",
+        "Soe gevic u, ende al huer lant,",
+        "Ende maeck u hertoghe van: BrabantHs. ... u hertoghe van. Aldus verbeeldt schrijver 't gene hij zal gehoord hebben, te weten: u 'r (u er) hertoge van, met 'r en h ineen versmolten. Z. 4, 10, 621.",
+        "Saelt nae u heten emmermeere.",
+        "Oic wil ic dat u hulde ende sweere"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1325,
+       "lines": [
+        "Die geweldich keiser van Roeme",
+        "Was, ende van Vranckeryck coninc,",
+        "Hertoghe van Brabant, verstaet die dinc,",
+        "By name hiet hij Lodewijc;",
+        "In eeren regeerdj sekerlyc,"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 223,
+       "lines": [
+        "Dit was, op dat ghijt mooght verstaen,",
+        "Om dat te leene niet hadde ontfaen",
+        "Die hertoghe van Ghelre die stat ende dlant",
+        "Van den Grave, si u bekant,",
+        "Alsoe hi sculdich was te doene,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 355,
+       "lines": [
+        "En heeft hem niet gheconsenteert",
+        "Eneghen dienst. \"Dus wert gheweert",
+        "Dat die hertoghe van der stede",
+        "Gheenen dienst en hadde, so hi en dede",
+        "Vander stat van Lovene, noch int ghemeine"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 560,
+       "lines": [
+        "Entie stat heeft hem weder saen",
+        "Ghehult, ghesworen, sonder si,",
+        "Als hertoghe van Brabant, ghelijc als si",
+        "Sculdich es te sweerne meer no min;",
+        "In den welken gheviel, verstaet den sin,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "wilt verstaen",
+     "type": "bigram",
+     "score": 0.002815786643394117,
+     "known": [
+      {
+       "line_no": 163,
+       "lines": [
+        "Ende reden na den hertoge goet,",
+        "Maer twas sake tegen spoet;",
+        "Want hi hadde, wilt verstaen,",
+        "Sijn pert doen averecht beslaen.",
+        "Dus soe volghden zy hem contraren."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 413,
+       "lines": [
+        "Eenen broeder, als men mach lesen,",
+        "Hae die maeght, hiet Octaviaen,Hs. Hoe... die Octaviaen.",
+        "Die Karlen, wilt verstaen,",
+        "Coes, teenen ghesellen sine;",
+        "Ende toech soe op den jonghelinc ryne,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 538,
+       "lines": [
+        "Overlopen, nae die warede,",
+        "Ende den tex in ryme besceden:",
+        "Die edel Cornike, wilt verstaen,",
+        "Ende som die daden, die ghedaen",
+        "Hebben die heeren der Brabansoene."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 1033,
+       "lines": [
+        "Altijt gheweest, des sijt vroet,",
+        "Een ghetrouwe Brabantre goet,",
+        "Ende hadde den lande, wilt verstaen,",
+        "Meneghen trouwen dienst ghedaen,",
+        "Ende hi waer vader blikelijc"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1733,
+       "lines": [
+        "Van Chiny ende der voeghdie,",
+        "Met allen den toebehoorten, die",
+        "Bi ons, Anthonise, wilt verstaen,",
+        "Ende Elizabetten sijn ghedaen,",
+        "Die wi willen onghespaert"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2195,
+       "lines": [
+        "Van Brabant den hertoghe milde,",
+        "LXX dusent ouder schilde,",
+        "Te sekeren tiden, wilt verstaen.",
+        "Dwelc hertoghe Willem heeft ghedaen,",
+        "Ende hertoghe Anthonijs heeft ghegheven"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "dat die",
+     "type": "bigram",
+     "score": 0.0025963333901056055,
+     "known": [
+      {
+       "line_no": 141,
+       "lines": [
+        "Liepen tsamen over hoot,",
+        "Ende spraken van den wonder groot",
+        "Dat die vremde man bedreeff,",
+        "Dat hi en boech noch en neech",
+        "Den hoogen princen, ende offerde voren,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 419,
+       "lines": [
+        "Synder suster, wie herte ende gront",
+        "Karlen op gaf, ende hy haer weder.",
+        "Soe dat die maget met hem neder",
+        "Hier quam, tot den .vij. Tommen,",
+        "Die edele vrouwe, die bloeme jonge,"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 647,
+       "lines": [
+        "Al doelende, die ridder coen,",
+        "Reet henen wech, lanx henen der Scelt,",
+        "Soe langhe dat die vrome helt",
+        "Bl. 6, aarkant.In een foreest den wech verloes;",
+        "Ende ter rechter hant op coes"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 355,
+       "lines": [
+        "En heeft hem niet gheconsenteert",
+        "Eneghen dienst. \"Dus wert gheweert",
+        "Dat die hertoghe van der stede",
+        "Gheenen dienst en hadde, so hi en dede",
+        "Vander stat van Lovene, noch int ghemeine"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 379,
+       "lines": [
+        "Sommeghe seiden dat hi die stat",
+        "Van Tricht geheel wilde hebben ghehat,",
+        "Mids dat die elect, ongheloghen,",
+        "Van Ludike te hem weert hadde ghetoghen",
+        "Meer dan hem wel toebehoorde."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 515,
+       "lines": [
+        "Wel ende eerlike was ghedaen;",
+        "Voort wort overdreghen saen",
+        "Dat die hertoghe, verstaet den fijn,",
+        "Metten volke ende hoope sijn",
+        "Van wapenen, soude comen in"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "die greve van",
+     "type": "trigram",
+     "score": 0.0023370904763596735,
+     "known": [
+      {
+       "line_no": 3256,
+       "lines": [
+        "Om die dade, sij u verclaert,",
+        "Die syn vorders hadden ghedaen.",
+        "Die greve van Baeren, wilt verstaen, -",
+        "Welc was synder moijen soene,",
+        "Was altoes biden hertoghe vrome;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 3283,
+       "lines": [
+        "Ende van Gulke, die hertoghe;",
+        "Ende van Vlaendren, die prince hoege",
+        "Ende oec die greve van Henegouwe;",
+        "Die greve van Loen, in goeder trouwen",
+        "Die greve van Cleve wasser .j. oec;"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 3284,
+       "lines": [
+        "Ende van Vlaendren, die prince hoege",
+        "Ende oec die greve van Henegouwe;",
+        "Die greve van Loen, in goeder trouwen",
+        "Die greve van Cleve wasser .j. oec;",
+        "Ende van Spaijnen, die greve groet;"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 597,
+       "lines": [
+        "Door die stat van Tricht gheliden en conden.",
+        "Nochtan en was te dien stonden",
+        "Die greve van Nyvers, wats ghesciet,",
+        "Met sinen hoope aen comen niet;",
+        "Ende die van Antwerpen, hoordic lien."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1947,
+       "lines": [
+        "Den Rijn neder tot Colene toe,",
+        "Op een eilant. Soe quam doe",
+        "Bi Covelens die greve van Zeyne,",
+        "Die se ontfinc met herten reine,",
+        "Ende hadde bereet na heeren wise"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 2738,
+       "lines": [
+        "Sijn heer voor Eltere wel bewaert,",
+        "Ende reet selve int besorch;",
+        "Met hem die greve van Vernenborch,",
+        "Die joncheere van Montiouwen ende heer Aert",
+        "Van Crayenheem, al onghespaert,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "den heere",
+     "type": "bigram",
+     "score": 0.0021184139905756714,
+     "known": [
+      {
+       "line_no": 1398,
+       "lines": [
+        "Dat groet Kaerle was, Puppins soene:",
+        "Dat loghen es, ende dies vermanen",
+        "Die lieghen Kaerle den heere.Hs. Die liegen, Kaerle...",
+        ".Xiiij. jaer regeerdj, in eeren,",
+        "Vrancryck ende Brabant mede."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1673,
+       "lines": [
+        "Ende voerde met hem, des syt vroeder,",
+        "Van Bruessel den borchgreve Boudewijn,",
+        "Ende van Leefdale den heere fin;",
+        "Den heere van Assche, verstaet mij wale,",
+        "Ende heer Wernier van Orsmale."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 1674,
+       "lines": [
+        "Van Bruessel den borchgreve Boudewijn,",
+        "Ende van Leefdale den heere fin;",
+        "Den heere van Assche, verstaet mij wale,",
+        "Ende heer Wernier van Orsmale.",
+        "Dese voerdij met hem te Worms binnen,Hs. Dese woerdy ... de helft van de w- van woerdy doorgehaald. Z. 10."
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 642,
+       "lines": [
+        "Dat hertoghe Reinout soude betalen.",
+        "Ende daer af goede vesticheit doen.",
+        "Hertoghe Anthonise den heere coen",
+        "Vele dusent cronen oft guldene fine;",
+        "Ende daer toe worden gestelt termine."
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 707,
+       "lines": [
+        "Maer van Nyvers den brueder sijn",
+        "Hilt hi bi hem, verstaet den fijn,",
+        "Om in Brabant den heere coene",
+        "Ghenuechte ende solaes te doene,",
+        "Als hi ooc dede int oppenbare"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 868,
+       "lines": [
+        "Daer maecte hi, ic seker ben,",
+        "VI capiteine in corter stont:",
+        "Den heere van Heynsberghe, si u cont,",
+        "Her Sceiffaerde van Merode der met,",
+        "Den vooght van Coelne, dat wet,"
+       ],
+       "match_index": 2
+      }
+     ]
+    },
+    {
+     "term": "van den",
+     "type": "bigram",
+     "score": 0.001984447443352017,
+     "known": [
+      {
+       "line_no": 140,
+       "lines": [
+        "Ende alle die heeren, groot ende cleyn,",
+        "Liepen tsamen over hoot,",
+        "Ende spraken van den wonder groot",
+        "Dat die vremde man bedreeff,",
+        "Dat hi en boech noch en neech"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 373,
+       "lines": [
+        "Des edel keiser, sonder vaer,",
+        "Onthielt Karle, den joncheere,",
+        "Want die hoeghe keiserlic heereHs. want verkende, verkende doorgehaald, van den roodmerker of rubricator; en want op den boord erbij gezet.",
+        "Verkende, daer hy, met eeren groet,",
+        "Sat over tafele, die wapen bloet"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 402,
+       "lines": [
+        "Al daer sittende voer oghen.",
+        "Met gepeyse wert daer getoegen",
+        "Den herte uut des anders lichameHs. Den hertoghe..., hertoghe doorgehaald van den schrijver.",
+        "Ende met begeerten verenech samen,",
+        "Bl. 3, aarkant.Daerse die edele natuere toe bracht;"
+       ],
+       "match_index": 2
+      }
+     ],
+     "questioned": [
+      {
+       "line_no": 42,
+       "lines": [
+        "Soe vergaderden sonder beiden",
+        "Die drie state al te hant",
+        "Van den lande van Brabant,",
+        "Ende sloten samentlic ter vaert",
+        "Dat si Anthonise den ruwaert"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 224,
+       "lines": [
+        "Om dat te leene niet hadde ontfaen",
+        "Die hertoghe van Ghelre die stat ende dlant",
+        "Van den Grave, si u bekant,",
+        "Alsoe hi sculdich was te doene,",
+        "Na der uutspraken van der soene"
+       ],
+       "match_index": 2
+      },
+      {
+       "line_no": 358,
+       "lines": [
+        "Gheenen dienst en hadde, so hi en dede",
+        "Vander stat van Lovene, noch int ghemeine",
+        "Van den andren steden; dan alleine",
+        "Van Antwerpen: die volgden hem naer,",
+        "Entie vanden Bossche, dit was waer,"
+       ],
+       "match_index": 2
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

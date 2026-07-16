@@ -3,24 +3,29 @@
 //
 // This file only renders whatever is in /data/*.json. To plug in real
 // results instead of the bundled sample data, run export_for_website.py
-// against your corpus and pipeline output, and drop its four JSON files
-// into /data with the same names. No changes to this file are needed --
-// the sample-data banner even disables itself automatically once none of
-// the loaded files carry a "SAMPLE DATA" note.
+// against your corpus and pipeline output, and drop its JSON files into
+// /data with the same names. No changes to this file are needed -- the
+// sample-data banner disables itself automatically once ngrams.json,
+// rhymes.json, and null_calibration.json no longer carry a "SAMPLE DATA"
+// note. (embeddings.json is exempt from that check -- see boot(), below.)
 //
 // Expected shapes (also documented in export_for_website.py):
 //
 //   ngrams.json / rhymes.json:
-//     { meta: { known_label, questioned_label, note? },
-//       items: [ { term, type, score,
-//                  known:      [ { line_no, lines: [str,...], match_index } ],
-//                  questioned: [ same shape ] } ] }
+//     { meta: { known_label, note? },
+//       comparisons: [
+//         { questioned_label, similarity,
+//           items: [ { term, type, score,
+//                      known:      [ { line_no, lines: [str,...], match_index } ],
+//                      questioned: [ same shape ] } ] }
+//       ] }
 //
 //   null_calibration.json:
-//     { feature_mode, known_label, questioned_label, questioned_score,
-//       percentile, background: [ { document, score } ], note? }
+//     { rhymes: { known_label, background: [ { document, score } ],
+//                 comparisons: [ { questioned_label, score, percentile } ], note? },
+//       ngrams: { same shape } }
 //
-//   embeddings.json:
+//   embeddings.json (always bundled sample data -- see panel-embeddings):
 //     { known_label, questioned_label, note?,
 //       points: [ { id, doc: "known"|"questioned", x, y, line_no,
 //                   lines: [str,...], match_index } ] }
@@ -39,6 +44,10 @@
 
   function escapeRegex(s) {
     return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  function slugify(s) {
+    return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
   }
 
   // Wraps the first case-insensitive match of `term` in <mark>, HTML-escaping
@@ -65,6 +74,8 @@
     var note = (d && (d.note || (d.meta && d.meta.note))) || "";
     return note.toUpperCase().indexOf("SAMPLE DATA") !== -1;
   }
+
+  var MARKER_COLORS = ["#d62728", "#1f77b4", "#2ca02c", "#9467bd", "#ff7f0e", "#8c564b"];
 
   // ---- tabs -------------------------------------------------------------
 
@@ -117,14 +128,39 @@
   }
 
   // ---- compare tabs: shared bigrams/trigrams & shared rhymes -------------
+  //
+  // One stacked block per entry in data.comparisons -- e.g. one block for
+  // "known vs. boek 6" and another for "known vs. boek 7" -- each with its
+  // own independent term list and context panel.
 
-  function renderCompareTab(data, gridId, contextId) {
+  function renderCompareStack(data, containerId) {
+    var container = document.getElementById(containerId);
+    container.innerHTML = "";
+
+    data.comparisons.forEach(function (comparison) {
+      var blockId = containerId + "-" + slugify(comparison.questioned_label);
+      var block = document.createElement("div");
+      block.className = "comparison-block";
+      block.innerHTML =
+        '<h3 class="comparison-heading">' + escapeHtml(data.meta.known_label) + " vs. " +
+        escapeHtml(comparison.questioned_label) +
+        '<span class="comparison-score">similarity ' + comparison.similarity.toFixed(3) + "</span></h3>" +
+        '<div class="compare-grid" id="' + blockId + '-grid" aria-live="polite"></div>' +
+        '<div class="context-panel" id="' + blockId + '-context">' +
+        '<p class="context-placeholder">Click a shared term above to compare its use in both texts.</p></div>';
+      container.appendChild(block);
+
+      renderSingleComparison(data.meta.known_label, comparison, blockId + "-grid", blockId + "-context");
+    });
+  }
+
+  function renderSingleComparison(knownLabel, comparison, gridId, contextId) {
     var grid = document.getElementById(gridId);
     var context = document.getElementById(contextId);
-    var items = (data.items || []).slice().sort(function (a, b) { return b.score - a.score; });
+    var items = (comparison.items || []).slice().sort(function (a, b) { return b.score - a.score; });
 
     function columnHtml(side) {
-      var label = side === "known" ? data.meta.known_label : data.meta.questioned_label;
+      var label = side === "known" ? knownLabel : comparison.questioned_label;
       var rows = items.map(function (item) {
         return (
           '<li><button class="term-btn" data-term="' + escapeHtml(item.term) + '" data-side="' + side + '">' +
@@ -167,9 +203,9 @@
       context.innerHTML =
         "<h4>\u201C" + escapeHtml(item.term) + "\u201D</h4>" +
         '<div class="context-grid">' +
-        '<div class="context-col"><h5>' + escapeHtml(data.meta.known_label) + "</h5>" +
+        '<div class="context-col"><h5>' + escapeHtml(knownLabel) + "</h5>" +
         occurrencesHtml(item.known, item.term) + "</div>" +
-        '<div class="context-col"><h5>' + escapeHtml(data.meta.questioned_label) + "</h5>" +
+        '<div class="context-col"><h5>' + escapeHtml(comparison.questioned_label) + "</h5>" +
         occurrencesHtml(item.questioned, item.term) + "</div>" +
         "</div>";
     }
@@ -177,47 +213,69 @@
     if (items.length) selectTerm(items[0].term); // preselect the top-scoring term
   }
 
-  // ---- impostors null-calibration strip plot -----------------------------
+  // ---- calibration strip plot (background similarity, shared by ngrams & rhymes tabs) --
 
-  function renderCalibration(data) {
-    var caption = document.getElementById("calibration-caption");
+  function renderCalibration(data, chartId, captionId, methodLabel) {
+    var caption = document.getElementById(captionId);
+    var parts = data.comparisons.map(function (c) {
+      return "\u201C" + c.questioned_label + "\u201D sits at the " + c.percentile + "th percentile (score " +
+        c.score.toFixed(3) + ")";
+    });
     caption.textContent =
-      'Background rate: how often "' + data.known_label + '" is the nearest match among ' +
-      data.background.length + " other, presumably unrelated documents (grey), compared with its score " +
-      'against "' + data.questioned_label + '" (highlighted). The questioned manuscript sits at the ' +
-      data.percentile + "th percentile of that background distribution.";
+      "Background: how similar \u201C" + data.known_label + "\u201D looks to each of the other " +
+      data.background.length + " documents in the corpus, by " + methodLabel + " (grey dots). Against that " +
+      "background, " + parts.join("; and ") + ".";
 
     var w = 640, h = 130, pad = 40;
     function scaleX(v) { return pad + v * (w - 2 * pad); }
+
+    var allScores = data.background.map(function (b) { return b.score; })
+      .concat(data.comparisons.map(function (c) { return c.score; }));
+    var lo = Math.min(0, Math.min.apply(null, allScores));
+    var hi = Math.max(1, Math.max.apply(null, allScores));
+    function norm(v) { return (v - lo) / ((hi - lo) || 1); }
 
     var dots = data.background.map(function (b, i) {
       var jitter = ((i % 5) - 2) * 9;
       var cy = h / 2 + jitter;
       return (
-        '<circle class="calibration-dot" cx="' + scaleX(b.score).toFixed(1) + '" cy="' + cy + '" r="4">' +
+        '<circle class="calibration-dot" cx="' + scaleX(norm(b.score)).toFixed(1) + '" cy="' + cy + '" r="4">' +
         "<title>" + escapeHtml(b.document) + ": " + b.score.toFixed(3) + "</title>" +
         "</circle>"
       );
     }).join("");
 
-    var markerX = scaleX(data.questioned_score).toFixed(1);
     var ticks = [0, 0.25, 0.5, 0.75, 1].map(function (t) {
+      var v = lo + t * (hi - lo);
       return (
         '<line class="calibration-axis" x1="' + scaleX(t) + '" x2="' + scaleX(t) + '" y1="' + (h - 24) + '" y2="' + (h - 18) + '"></line>' +
-        '<text class="calibration-label" x="' + scaleX(t) + '" y="' + (h - 4) + '" text-anchor="middle">' + t + "</text>"
+        '<text class="calibration-label" x="' + scaleX(t) + '" y="' + (h - 4) + '" text-anchor="middle">' + v.toFixed(2) + "</text>"
       );
     }).join("");
 
-    document.getElementById("calibration-chart").innerHTML =
-      '<svg viewBox="0 0 ' + w + " " + h + '" role="img" aria-label="Strip plot of impostor-method background scores, with the questioned manuscript score highlighted">' +
+    var markers = data.comparisons.map(function (c, i) {
+      var color = MARKER_COLORS[i % MARKER_COLORS.length];
+      var x = scaleX(norm(c.score)).toFixed(1);
+      return (
+        '<line class="calibration-marker-line" x1="' + x + '" x2="' + x + '" y1="14" y2="' + (h - 24) +
+        '" stroke="' + color + '" stroke-dasharray="3,3"></line>' +
+        '<circle class="calibration-marker" cx="' + x + '" cy="' + (h / 2) + '" r="6" fill="' + color + '">' +
+        "<title>" + escapeHtml(c.questioned_label) + ": " + c.score.toFixed(3) + "</title>" +
+        "</circle>"
+      );
+    }).join("");
+
+    var legend = data.comparisons.map(function (c, i) {
+      var color = MARKER_COLORS[i % MARKER_COLORS.length];
+      return '<span><i style="background:' + color + '"></i>' + escapeHtml(c.questioned_label) + "</span>";
+    }).join("");
+
+    document.getElementById(chartId).innerHTML =
+      '<svg viewBox="0 0 ' + w + " " + h + '" role="img" aria-label="Strip plot of background similarity scores, with the questioned documents highlighted">' +
       '<line class="calibration-axis" x1="' + pad + '" x2="' + (w - pad) + '" y1="' + (h - 24) + '" y2="' + (h - 24) + '"></line>' +
-      ticks + dots +
-      '<line class="calibration-axis" x1="' + markerX + '" x2="' + markerX + '" y1="14" y2="' + (h - 24) + '" stroke-dasharray="3,3"></line>' +
-      '<circle class="calibration-marker" cx="' + markerX + '" cy="' + (h / 2) + '" r="6">' +
-      "<title>" + escapeHtml(data.questioned_label) + ": " + data.questioned_score.toFixed(3) + "</title>" +
-      "</circle>" +
-      '<text class="calibration-marker-label" x="' + markerX + '" y="12" text-anchor="middle">questioned ms.</text>' +
-      "</svg>";
+      ticks + dots + markers +
+      "</svg>" +
+      '<div class="calibration-legend">' + legend + "</div>";
   }
 
   // ---- contrastive-embedding scatter plot ---------------------------------
@@ -292,12 +350,16 @@
     ]).then(function (results) {
       var ngrams = results[0], rhymes = results[1], calibration = results[2], embeddings = results[3];
 
-      renderCompareTab(ngrams, "ngrams-grid", "ngrams-context");
-      renderCompareTab(rhymes, "rhymes-grid", "rhymes-context");
-      renderCalibration(calibration);
+      renderCompareStack(ngrams, "ngrams-comparisons");
+      renderCompareStack(rhymes, "rhymes-comparisons");
+      renderCalibration(calibration.ngrams, "ngrams-calibration-chart", "ngrams-calibration-caption", "bigram/trigram use");
+      renderCalibration(calibration.rhymes, "rhymes-calibration-chart", "rhymes-calibration-caption", "rhyme-word use");
       renderEmbeddings(embeddings);
 
-      initBanner(results.some(isSampleDataset));
+      // embeddings.json is intentionally always sample data (no model has been
+      // trained yet) -- it's excluded here so the banner can still disappear
+      // once your real ngrams/rhymes/calibration results are in place.
+      initBanner([ngrams, rhymes, calibration].some(isSampleDataset));
     }).catch(function (err) {
       console.error(err);
       document.querySelectorAll(".tab-panel").forEach(function (p) {

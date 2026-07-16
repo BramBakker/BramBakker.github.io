@@ -1,72 +1,81 @@
 # Hennen van Merchtenen and the voortzetting
 
-A static site presenting three independent lines of computational evidence
-for shared authorship between Hennen van Merchtenen's known work and the
-disputed continuation of the Brabantsche Yeesten (ch. 6-7).
+A static site comparing Cronycke van Brabant against two disputed books of the
+Brabantsche Yeesten continuation, by shared rhyme words and shared bigrams/trigrams.
 
-## Viewing it locally
-
-Browsers block `fetch()` on files opened directly (`file://`), and this
-site loads its data as JSON, so start a local server from this folder
-rather than double-clicking `index.html`:
+## Files
 
 ```
-python3 -m http.server 8000
+index.html                 the page
+style.css                  styling
+script.js                  renders everything from /data -- no build step
+data/
+  ngrams.json               real: TF-IDF bigram/trigram comparisons
+  rhymes.json               real: rhyme-word comparisons
+  null_calibration.json     real: background similarity distributions
+  embeddings.json           placeholder -- no embedding model exists yet
+
+rhyme_similarity.py         rhyme-word feature extraction + cosine similarity
+ngram_similarity.py         TF-IDF bigram/trigram feature extraction + cosine similarity
+export_for_website.py       imports the two scripts above, writes the three real JSON files
 ```
 
-then open `http://localhost:8000/`. Any static server works the same way
-(the VS Code "Live Server" extension, `npx serve`, etc.).
+## Hosting on GitHub Pages
 
-## Structure
+1. Put all of the above in a repo (keep `data/` at the same level as `index.html`
+   -- `script.js` fetches `data/*.json` with a relative path).
+2. Settings -> Pages -> deploy from the branch containing these files.
+3. That's it -- no build step, it's a static site.
 
-```
-index.html        the page itself (three tabs: n-grams, rhymes, embeddings)
-style.css         all styling, including the blurred manuscript backdrop
-script.js         tab switching + rendering for all three tabs
-data/*.json       the actual results the page displays (currently SAMPLE DATA)
-assets/           the manuscript photo used as the header backdrop
-```
+If you host `data/*.json` in a *different* repo instead, change the four
+`fetchJSON("data/...")` calls at the bottom of `script.js` to full
+`raw.githubusercontent.com` URLs.
 
-## Replacing the sample data
+## Regenerating the data
 
-Everything under `data/` is currently placeholder content so the page has
-something real to click through -- it is clearly marked `SAMPLE DATA` in
-both a visible banner and each JSON file's own `note` field. To plug in
-real results:
+You only need to do this again if the corpus changes or you add more
+questioned documents.
 
-1. Run your analysis pipeline (in order, from the folder containing your
-   corpus):
-   - `extract_xml_to_csv.py` -- once, to turn the TEI XML into CSVs with
-     author metadata.
-   - `impostors_verification.py` -- General Impostors verification with
-     leave-one-out validation.
-   - `contrastive_line_embeddings.py` -- trains the contrastive line
-     encoder and saves `line_embeddings.npy` (needed for the embeddings
-     tab; skip this if you only want the first two tabs working).
-2. Run `export_for_website.py` (edit `KNOWN_MATCH`, `QUESTIONED_MATCH`,
-   `KNOWN_LABEL`, `QUESTIONED_LABEL`, and `OUTPUT_DIR` at the top first).
-   It reads the pipeline's output and writes fresh `ngrams.json`,
-   `rhymes.json`, `null_calibration.json`, and `embeddings.json`.
-3. Copy those four files into this site's `data/` folder, overwriting the
-   sample ones (or point `OUTPUT_DIR` at this folder directly). Reload the
-   page -- the sample-data banner disappears on its own once none of the
-   loaded files carry a `SAMPLE DATA` note.
+1. Put your corpus CSVs (`author,chapter,line,text` columns; `author` is
+   optional) in a `csv_files/` folder next to these scripts.
+2. Edit the config block at the top of `export_for_website.py` if your
+   filenames or labels differ:
+   ```python
+   KNOWN_MATCH = "cronycke_van_brabant"
+   KNOWN_LABEL = "Cronycke van Brabant"
+   QUESTIONED_MATCHES = [
+       ("brabantsche_yeesten__6", "Brabantsche Yeesten, boek 6"),
+       ("brabantsche_yeesten__7", "Brabantsche Yeesten, boek 7"),
+   ]
+   ```
+3. Run:
+   ```
+   python3 export_for_website.py
+   ```
+   This writes `data/ngrams.json`, `data/rhymes.json`, and
+   `data/null_calibration.json`. Drop those three into the site's `data/`
+   folder (it leaves `embeddings.json` alone).
 
-The exact JSON schema each file expects is documented in the comment block
-at the top of `script.js`.
+`rhyme_similarity.py` and `ngram_similarity.py` can also still be run
+directly for console/CSV output if you just want to explore the corpus
+without touching the website.
 
-## Editing the page itself
+## Method notes
 
-- Title, subtitle, byline, abstract, and the "How it was made" paragraph
-  are plain text in `index.html` -- edit directly.
-- The one accent color lives in `style.css` as `--accent`; a second accent
-  (`--accent2`, used to tell the two documents apart in the embedding plot)
-  sits right next to it.
-- To use a different manuscript photo for the header backdrop, replace
-  `assets/manuscript-bg.jpg` and keep the filename, or update the path in
-  the `.hero::before` rule in `style.css`.
+- **Background/calibration**: for each method, "background" is the known
+  text's similarity to every *other single document* in the corpus (not all
+  pairwise combinations) -- so each dot in the calibration chart is one real
+  document, hoverable by name. The questioned books' percentile is computed
+  against that same distribution.
+- **Context windows**: each shared term's example occurrences show the
+  matched line plus 2 lines of surrounding context on each side, up to 3
+  occurrences per document per term.
+- **Contrastive embeddings tab**: intentionally left as placeholder/sample
+  data. No model has been trained; the tab exists to preview the intended
+  layout. Replace `data/embeddings.json` (shape documented at the top of
+  `script.js`) once you have one, and it'll stop being flagged as sample data.
 
-## License
+## Not included
 
-Text, images, and data: CC BY 4.0. Reuse freely with credit.
-Source template: https://github.com/christiancasey/measuring-manuscripts-project-template
+- `assets/manuscript-bg.png` (the hero background image) -- add your own; its
+  absence doesn't break anything, the hero just shows a plain background.
