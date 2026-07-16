@@ -1,22 +1,25 @@
 /* A simple, readable stylesheet. Change the one accent color to re-skin the page. */
 :root {
+  /* ===== COLOR PALETTE ===== */
   --ink:    #1a1a1a;
   --muted:  #666666;
-  --accent: #6b2d2d;   /* <- change this one color */
+  --accent: #b16f24;   /* <- change this one color */
   --rule:   #e3e3e3;
   --bg:     #ffffff;
 
-  /* Second accent for the two-document comparisons (known vs. questioned)
-     and the embedding scatter plot. A muted gold, echoing manuscript
-     illumination, so it reads as "the other document" without clashing
-     with the rubrication-red --accent. */
-  --accent2:      #a9852f;
-  --accent-soft:  rgba(107, 45, 45, 0.08);
-  --accent2-soft: rgba(169, 133, 47, 0.14);
-  --highlight:    rgba(199, 151, 66, 0.38);
+  --accent2:      hsl(0, 81%, 69%);
+  --accent-soft:  rgba(66, 16, 3, 0.08);
+  --accent2-soft: rgba(169, 61, 47, 0.14);
+  --highlight:    rgba(255, 0, 0, 0.38);
   --warn-bg:      #fdf6e3;
   --warn-border:  #e2c778;
   --warn-text:    #6b5416;
+
+  /* ===== TYPOGRAPHY TOKENS ===== */
+  /* Adjust these three lines to instantly re-skin the fonts across the entire document */
+  --font-body:     "Helvetica Neue", Arial, sans-serif;
+  --font-headings: "Playfair Display", Georgia, serif;
+  --font-ui:       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -29,7 +32,9 @@ body {
   margin: 0;
   background: transparent; /* Essential: prevents body from painting white over the backdrop */
   color: var(--ink);
-  font: 17px/1.6 Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
   position: relative; /* Establishes stacking context for body::before */
@@ -84,8 +89,8 @@ main {
 }
 
 header { border-bottom: 2px solid var(--accent); padding-bottom: 1rem; }
-h1 { font-size: 2rem; margin: 0 0 .25rem; color: var(--accent); }
-h2 { font-size: 1.25rem; margin-top: 2.5rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem; }
+h1 { font-family: var(--font-headings); font-size: 2rem; margin: 0 0 .25rem; color: var(--accent); }
+h2 { font-family: var(--font-headings); font-size: 1.25rem; margin-top: 2.5rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem; }
 .subtitle { font-size: 1.1rem; color: var(--muted); margin: .25rem 0 0; }
 .byline { color: var(--muted); font-size: .95rem; }
 
@@ -97,8 +102,7 @@ figure { margin: 1.5rem 0; text-align: center; }
 img { max-width: 100%; height: auto; border: 1px solid var(--rule); }
 figcaption { color: var(--muted); font-size: .9rem; margin-top: .5rem; }
 
-table { border-collapse: collapse; width: 100%; font-size: .95rem;
-        font-family: -apple-system, system-ui, sans-serif; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; font-family: var(--font-ui); }
 th, td { text-align: left; padding: .5rem .75rem; border-bottom: 1px solid var(--rule); }
 thead th { border-bottom: 2px solid var(--accent); }
 
@@ -110,7 +114,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
   position: sticky; top: 0; z-index: 20;
   display: flex; align-items: center; justify-content: center; gap: .75rem;
   background: var(--warn-bg); border-bottom: 1px solid var(--warn-border);
-  color: var(--warn-text); font: 500 .85rem/1.4 -apple-system, system-ui, sans-serif;
+  color: var(--warn-text); font-family: var(--font-ui); font-weight: 500; font-size: .85rem; line-height: 1.4;
   padding: .55rem 2.5rem .55rem 1rem; text-align: center;
 }
 .sample-banner code { background: rgba(0,0,0,.06); padding: .05rem .3rem; }
@@ -125,11 +129,11 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 /* ===== Tabs ===== */
 .tabs {
   display: flex; gap: 1.5rem; margin-top: 2.5rem; border-bottom: 1px solid var(--rule);
-  font-family: -apple-system, system-ui, sans-serif;
+  font-family: var(--font-ui);
 }
 .tab {
   background: none; border: none; cursor: pointer;
-  font: 600 .95rem/1 -apple-system, system-ui, sans-serif;
+  font-family: var(--font-ui); font-weight: 600; font-size: .95rem; line-height: 1;
   color: var(--muted); padding: 0 0 .8rem; margin-bottom: -1px;
   border-bottom: 2px solid transparent;
 }
@@ -139,7 +143,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 
 .tab-panel { padding-top: 1.75rem; }
 .tab-intro { color: var(--muted); font-size: .97rem; max-width: 68ch; }
-.tab-panel h3 { font-size: 1.05rem; margin-top: 2.75rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem; }
+.tab-panel h3 { font-family: var(--font-headings); font-size: 1.05rem; margin-top: 2.75rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem; }
 .placeholder-note {
   background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-text);
   padding: .6rem .9rem; margin-top: 1rem; max-width: none;
@@ -153,16 +157,16 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
   border-top: 1px solid var(--rule); padding-top: 1.75rem;
 }
 .comparison-heading {
-  font: 600 1.05rem/1.3 Georgia, serif; color: var(--ink); margin: 0 0 .25rem;
+  font-family: var(--font-headings); font-weight: 600; font-size: 1.05rem; line-height: 1.3; color: var(--ink); margin: 0 0 .25rem;
   display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap;
 }
 .comparison-score {
-  font: 500 .8rem/1 -apple-system, system-ui, sans-serif; color: var(--muted);
+  font-family: var(--font-ui); font-weight: 500; font-size: .8rem; line-height: 1; color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
 .compare-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.25rem;
-  font-family: -apple-system, system-ui, sans-serif;
+  font-family: var(--font-ui);
 }
 .compare-col h4 {
   margin: 0 0 .6rem; font-size: .8rem; text-transform: uppercase; letter-spacing: .04em;
@@ -172,7 +176,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 .term-btn {
   width: 100%; display: flex; align-items: center; justify-content: space-between; gap: .75rem;
   background: none; border: none; border-bottom: 1px solid var(--rule); cursor: pointer;
-  padding: .55rem .75rem; text-align: left; font: 400 .92rem/1.3 Georgia, serif; color: var(--ink);
+  padding: .55rem .75rem; text-align: left; font-family: var(--font-body); font-weight: 400; font-size: .92rem; line-height: 1.3; color: var(--ink);
 }
 .term-list li:last-child .term-btn { border-bottom: none; }
 .term-btn:hover { background: var(--accent-soft); }
@@ -181,7 +185,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 .term-btn .term-word { font-weight: 600; }
 .term-btn .term-meta {
   flex-shrink: 0; display: flex; gap: .4rem; align-items: center;
-  font-family: -apple-system, system-ui, sans-serif; font-size: .72rem; color: var(--muted);
+  font-family: var(--font-ui); font-size: .72rem; color: var(--muted);
 }
 .term-tag {
   border: 1px solid var(--rule); padding: .05rem .35rem; text-transform: uppercase; letter-spacing: .03em;
@@ -194,10 +198,10 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
   padding: 1.1rem 1.25rem 1.3rem;
 }
 .context-placeholder { color: var(--muted); font-size: .92rem; margin: 0; }
-.context-panel h4 { margin: 0 0 1rem; font: 600 1rem/1.3 Georgia, serif; color: var(--ink); }
+.context-panel h4 { margin: 0 0 1rem; font-family: var(--font-headings); font-weight: 600; font-size: 1rem; line-height: 1.3; color: var(--ink); }
 .context-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; }
 .context-col h5 {
-  margin: 0 0 .5rem; font: 600 .78rem/1 -apple-system, system-ui, sans-serif;
+  margin: 0 0 .5rem; font-family: var(--font-ui); font-weight: 600; font-size: .78rem; line-height: 1;
   text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
 }
 .context-lines {
@@ -206,7 +210,7 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 .context-lines li { padding: .1rem 0; }
 .context-lines li.match-line { color: var(--ink); font-weight: 600; }
 .context-lines mark { background: var(--highlight); color: var(--ink); padding: 0 .1em; }
-.occurrence-count { color: var(--muted); font-size: .8rem; margin: -0.5rem 0 .75rem; font-family: -apple-system, system-ui, sans-serif; }
+.occurrence-count { color: var(--muted); font-size: .8rem; margin: -0.5rem 0 .75rem; font-family: var(--font-ui); }
 
 /* ===== Calibration chart (ngrams + rhymes tabs) ===== */
 #ngrams-calibration-chart svg, #rhymes-calibration-chart svg { width: 100%; height: auto; }
@@ -214,10 +218,10 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 .calibration-dot:hover { opacity: 1; }
 .calibration-marker-line { stroke-width: 1.5; }
 .calibration-axis { stroke: var(--rule); stroke-width: 1; }
-.calibration-label { font: 400 11px/1 -apple-system, system-ui, sans-serif; fill: var(--muted); }
+.calibration-label { font-family: var(--font-ui); font-weight: 400; font-size: 11px; line-height: 1; fill: var(--muted); }
 .calibration-legend {
   display: flex; gap: 1.25rem; flex-wrap: wrap; margin-top: .6rem;
-  font: 500 .82rem/1 -apple-system, system-ui, sans-serif; color: var(--ink);
+  font-family: var(--font-ui); font-weight: 500; font-size: .82rem; line-height: 1; color: var(--ink);
 }
 .calibration-legend span { display: inline-flex; align-items: center; gap: .4rem; }
 .calibration-legend i { width: .7rem; height: .7rem; display: inline-block; border-radius: 1px; }
@@ -231,9 +235,9 @@ footer { margin-top: 3.5rem; padding-top: 1rem; border-top: 1px solid var(--rule
 .embed-point.doc-questioned { fill: var(--accent2); }
 .embed-point:hover { stroke: var(--ink); }
 .embed-point.is-selected { stroke: var(--ink); stroke-width: 2; r: 6; }
-.embed-axis-label { font: 400 11px/1 -apple-system, system-ui, sans-serif; fill: var(--muted); }
+.embed-axis-label { font-family: var(--font-ui); font-weight: 400; font-size: 11px; line-height: 1; fill: var(--muted); }
 .embed-legend {
-  display: flex; gap: 1.25rem; margin-bottom: .75rem; font: 500 .82rem/1 -apple-system, system-ui, sans-serif;
+  display: flex; gap: 1.25rem; margin-bottom: .75rem; font-family: var(--font-ui); font-weight: 500; font-size: .82rem; line-height: 1;
 }
 .embed-legend span { display: inline-flex; align-items: center; gap: .4rem; }
 .embed-legend i { width: .7rem; height: .7rem; display: inline-block; }
