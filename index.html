@@ -37,7 +37,7 @@
   <section>
     <h2>Abstract</h2>
     <p>
-      The <em>Voortzetting van de Brabantsche Yeesten</em> 
+      <em>De Voortzetting van de Brabantsche Yeesten</em> 
       is a fifteenth-century Middle Dutch rhyme chronicle detailing the history of the 
       Duchy of Brabant. Written as a direct sequel to the earlier <em>Brabantsche Yeesten</em> 
       by Jan van Boendale, its authorship remains a subject of active scholarly debate. 
@@ -46,9 +46,9 @@
     </p>
 
     <p>
-      The <em>Voortzetting</em> survives in a remarkable autograph manuscript 
+      <em>De Voortzetting</em> survives in a remarkable autograph manuscript 
       filled with marginal additions, deletions, and corrections, providing rare insight 
-      into the author’s writing and editing process. Unfortunately no such autograph exists for 
+      into the author’s writing and editing process<a>Houthuys (2004)</a>. Unfortunately no such autograph exists for 
       Merchtenen's <em>Cornicke</em>. Consequently, handwriting comparison cannot be 
       used to settle the identity of the author.
     </p>
@@ -56,7 +56,7 @@
     <p>
       Building on the work of 
       <a href="#ref-reynaert">Reynaert (2019)</a>, 
-      who argued for Merchtenen’s authorship based on qualitative stylistic and rhyming 
+      who argued for Merchtenen’s authorship based on (among other evidence) qualitative stylistic and rhyming 
       evidence, this project approaches the problem computationally. Using word frequencies and 
       machine learning representations, we assess and compare the writing styles of 
       these chronicles against a wider corpus of Middle Dutch rhymed texts.
@@ -79,8 +79,8 @@
   <!-- ----- TAB 1: bigram / trigram frequency ----- -->
   <section class="tab-panel" id="panel-ngrams" role="tabpanel" aria-labelledby="tab-ngrams" tabindex="0">
     <p class="tab-intro">
-      Shared bigrams and trigrams between the known text and the questioned book, ranked by their
-      contribution to the two documents' TF&#8209;IDF similarity. Click any term &mdash; on either side &mdash;
+      Shared bigrams and trigrams between the known text and De Voortzetting, ranked by their
+      contribution to the two documents' TF&#8209;IDF similarity. Click any term on either side
       to see how each document actually uses it.
     </p>
     <div id="ngrams-comparisons"></div>
@@ -93,7 +93,7 @@
   <!-- ----- TAB 2: rhyme similarity ----- -->
   <section class="tab-panel" id="panel-rhymes" role="tabpanel" aria-labelledby="tab-rhymes" tabindex="0" hidden>
     <p class="tab-intro">
-      Shared rhyme words &mdash;, an important signal for authorship. Click any word to see the
+      Shared rhyme words between the documents. Click any word to see the
       lines it closes in both texts. Investigate the similarities and differences in rhyming style yourself!
     </p>
     <div id="rhymes-comparisons"></div>
@@ -111,8 +111,8 @@
       point to read the line in context.
     </p>
     <p class="tab-intro -note">
-      <strong>Warning:</strong> The model has shown unstable results, it fails to seperate authorship&mdash;
-      the results should be interpreted as a work in progress.
+      <strong>Warning:</strong> The model fails during training and does not converge,
+      the visualization should be interpreted as a work in progress, and as an indication how such a model could be used. 
     </p>
     <div class="embedding-layout">
       <div id="embedding-plot"></div>
@@ -127,8 +127,8 @@
     <h2>How it was made</h2>
     <p>
       Three independent methods were run over a corpus of 263 Middle Dutch rhymed manuscripts:
-      TF&#8209;IDF bigram/trigram cosine similarity, a rhyme-word cosine similarity built the same way,
-      and a (not working) contrastive character-level line encoder trained across the corpus with author
+      TF&#8209;IDF bigram/trigram cosine similarity, rhyme-word cosine similarity,
+      and a (not working) contrastive character-level line encoder (based on ByT5) trained across the corpus with author
       identity as the training signal. For the first two methods, each questioned book's similarity to
       the known text is checked against a background distribution &mdash; all document similarity to
       every other document in the corpus &mdash; so a high score can be judged against how much similarity
@@ -150,6 +150,10 @@
            style="margin-left: 5px; text-decoration: underline;">
            [Access Article]
         </a>
+      </li>
+      <li id="ref-houthuys" style="margin-bottom: 1em; line-height: 1.5;">
+      Houthuys, Astrid. Middeleeuws kladwerk: de autograaf van de Brabantsche yeesten, boek VI (vijftiende eeuw). 
+        <em>Vol. 117. Uitgeverij Verloren,</em> 2009.
       </li>
     </ul>
   </section>
