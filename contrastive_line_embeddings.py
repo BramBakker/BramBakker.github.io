@@ -12,7 +12,7 @@ from transformers import AutoTokenizer, T5EncoderModel
 # --------------------------------------------------------------------------
 # CONFIGURATION
 # --------------------------------------------------------------------------
-INPUT_FOLDER = Path("rijm_csv")
+INPUT_FOLDER = Path("csv_files")
 TEXT_COLUMN = "text"
 AUTHOR_COLUMN = "author"
 
