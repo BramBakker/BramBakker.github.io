@@ -41,7 +41,7 @@ INPUT_FOLDER = Path("csv_files")
 TEXT_COLUMN = "text"
 
 KNOWN_MATCH = "cronycke_van_brabant"
-KNOWN_LABEL = "Cronycke van Brabant"
+KNOWN_LABEL = "Cornicke"
 
 # (filename substring, display label) for the questioned document
 QUESTIONED_MATCHES = [
@@ -270,7 +270,6 @@ def run() -> None:
 
     print(f"Done. Wrote rhymes.json, ngrams.json, null_calibration.json, and both "
           f"*_similarity_distribution.png histograms to {OUTPUT_FOLDER}/")
-    print("(embeddings.json is left untouched -- it stays as sample/placeholder data)")
 
 
 if __name__ == "__main__":
